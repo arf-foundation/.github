@@ -1,78 +1,122 @@
 # arf-foundation 👋
 **Agentic Reliability Framework (ARF) – Open-Source Organization**
 
-We build **reliable, observable, and self-healing AI systems** for real-world cloud and hybrid infrastructure. Our mission is to provide developers, researchers, and enterprises with a **mathematically grounded, auditable, and fully transparent framework** for AI governance, risk assessment, and automated healing loops.
+We build **reliable, observable, and self-healing AI systems** for cloud and hybrid infrastructure. ARF provides **auditable, mathematically grounded, and fully transparent** AI governance, risk assessment, and automated healing loops.
 
 ---
 
 ## 🌟 Our Vision
-- Enable provably safe AI operations at scale across cloud and hybrid environments.  
-- Provide **open-source advisory engines** that are mathematically rigorous, auditable, and reproducible.  
-- Foster a global community of AI engineers, cloud practitioners, and researchers building the next generation of **reliable, agentic AI systems**.  
-- Drive the adoption of **hybrid intelligence architectures** combining online learning, probabilistic reasoning, and semantic memory.  
+- Enable provably safe AI operations at scale in cloud, hybrid, and multi-agent environments.  
+- Provide **open-source advisory engines** that are rigorous, auditable, and reproducible.  
+- Foster a global community of AI engineers, cloud practitioners, and researchers developing the next generation of **reliable agentic AI systems**.  
+- Bridge **mathematical theory and practical operations**, empowering organizations to adopt trustworthy AI governance.  
 
 ---
 
-## 📌 Pinned Repositories
-**Core projects that define ARF:**
+## 🌐 ARF Dashboard
+Explore the **live ARF ecosystem** and OSS control plane:  
+**[ARF Frontend Dashboard](https://arf-frontend-sandy.vercel.app/)**
 
-- **[agentic_reliability_framework](https://github.com/arf-foundation/agentic-reliability-framework)** – OSS advisory engine implementing **Deterministic Probability Thresholding (DPT)** and **hybrid Bayesian inference**.  
-- **[arf-api](https://github.com/arf-foundation/arf-api)** – FastAPI-based control plane providing **cloud governance APIs**, risk scoring, and outcome tracking.  
-- **[arf-frontend](https://github.com/arf-foundation/arf-frontend)** – Interactive UI for **visualizing ARF decisions, risk scores, and multi-agent simulations**.  
-- **[arf-spec](https://github.com/arf-foundation/arf-spec)** – Formal specification of ARF **data models, decision rules, and API contracts**.  
-- **[research](https://github.com/arf-foundation/research)** – Experimental research projects, including **hallucination detection, RAG memory analysis, and Bayesian pattern discovery**.  
-- **[start-ups](https://github.com/arf-foundation/start-ups)** – Pilot projects, early ecosystem experiments, and **client demos**.  
-
----
-
-## 🚀 Get Started
-- **Live Demo:** [ARF Hugging Face Space v4](https://huggingface.co/spaces/petter2025/Agentic-Reliability-Framework-v4)  
-- **Documentation:** [ARF Docs (Coming Soon)](https://docs.agentic-reliability-framework.io)  
-- **Tutorials:** Step-by-step guides in `TUTORIAL.md` of each repository.  
-- **Installation:** All core OSS repos are Python-based; see `environment.yml` for dependencies and setup.  
+- **Dashboard** – Visualize real-time risk, system health, and autonomous decisions.  
+- **History** – Track past incidents, outcomes, and audit trails.  
+- **Documentation** – Step-by-step tutorials, API guides, and ARF specifications.  
+- **Try Demo** – Interact with the **OSS advisory engine** and Bayesian risk evaluations.  
+- **Explore API** – Access the control plane API for custom governance operations.  
 
 ---
 
-## 🧠 What Makes ARF Unique
-1. **Hybrid Bayesian Architecture** – Combines online Beta-Binomial updates with offline HMC (NUTS) logistic regression to model complex risk patterns.  
-2. **Deterministic Probability Thresholding (DPT)** – Transparent decision-making using fixed thresholds, eliminating ambiguity in audit trails.  
-3. **Semantic Memory & Graph Retrieval** – Efficient incident similarity search via FAISS-based or fallback deterministic embeddings.  
-4. **Multi-Agent Orchestration** – Automated anomaly detection, root-cause analysis, and contextual recommendations.  
-5. **Cyclical Time Awareness** – Incorporates sine/cosine encodings for daily and weekly patterns in risk prediction.  
+## 📌 Ecosystem Overview
+
+| Component | Description |
+|-----------|-------------|
+| **OSS Engine** | Core Bayesian models, memory, and governance loop |
+| **API Control Plane** | FastAPI service exposing the framework to clients |
+| **Frontend UI** | Next.js dashboard for visualizing risk, decisions, and multi-agent simulations |
+| **Enterprise** | Advanced compliance, audit trails, and commercial support |
+| **Research** | Experimental studies, semantic memory, hallucination detection, and hybrid Bayesian inference |
+| **Mathematical Foundations** | Hybrid Bayesian inference combining conjugate priors, HMC/NUTS offline learning, and calibrated risk fusion |
 
 ---
 
-## 🏛 Governance & Community
-ARF is guided by the following principles:  
-- **Transparency:** All OSS advisory logic is open, auditable, and reproducible.  
-- **Security:** Critical constants and advisory outputs are reviewed and safe for public use.  
-- **Collaboration:** We welcome contributions from developers, researchers, and enthusiasts.  
-- **Ethics:** AI operations should be reliable, explainable, and human-centered.  
-
-**How to Contribute:**  
-1. Fork any repository, make changes, and submit a pull request.  
-2. Participate in **Discussions** to propose features or report issues.  
-3. Follow [Contribution Guidelines](https://github.com/arf-foundation/.github/blob/main/CONTRIBUTING.md).  
-4. Join our research community to help extend **RAG, probabilistic reasoning, and hybrid AI**.  
+## 🔑 Key Capabilities
+- **Bayesian Risk Scoring** – Conjugate priors + HMC for calibrated uncertainty and pattern discovery.  
+- **Semantic Memory** – FAISS-based retrieval of similar past incidents for context-aware decisions.  
+- **Deterministic Probability Thresholds (DPT)** – Approve (<0.2), Deny (>0.8), Escalate otherwise.  
+- **Multi-Agent Orchestration** – Automatic anomaly detection, root-cause analysis, forecasting, and governance actions.  
 
 ---
 
-## 🧩 Ecosystem & Impact
-- ARF is designed to be **modular**, allowing enterprise adoption without vendor lock-in.  
-- Integrates with major cloud platforms (Azure, AWS, GCP) via adapters.  
-- Supports experimental research in **hallucination detection, semantic reasoning, and agentic learning loops**.  
-- Helps organizations move from brittle rule-based policy engines to **probabilistic, auditable, and adaptive AI governance**.  
+## 🚀 Live Demos
+**OSS Demo** – Interactive Bayesian risk dashboard: [Launch Demo](https://huggingface.co/spaces/A-R-F/Agentic-Reliability-Framework-v4)  
 
----
+**API Example:**
+```bash
+curl -X POST /api/v1/incidents/evaluate -d '{"incident": "..."}'
+```
 
-## 🏷 Topics
-`infrastructure` `oss` `ai` `risk` `reliability` `bayesian-inference` `advisory` `cloud-governance` `fastapi` `agentic-framework` `ai-devops` `self-healing-ai` `hybrid-intelligence` `semantic-memory`  
+**Frontend Dashboard** – Real-time visualization of risk, decisions, and multi-agent orchestration.
 
----
+📂 Repository Links
+-------------------
 
-## 📬 Contact
-- **Email:** petter2025us@outlook.com  
-- **LinkedIn:** [Juan Petter](https://www.linkedin.com/in/petterjuan)  
-- **Book a 30-min call:** [Calendly](https://calendly.com/)  
+*   [**agentic-reliability-framework**](https://github.com/arf-foundation/agentic-reliability-framework) – OSS advisory engine with Bayesian models and governance loop.
+    
+*   **arf-api** – API backend exposing cloud governance endpoints.
+    
+*   **arf-frontend** – Interactive dashboard UI.
+    
+*   **arf-spec** – Canonical specification of data models, decision rules, and APIs.
+    
+*   **research** – Experimental studies, semantic memory, and hallucination detection.
+    
+*   **start-ups** – Pilot projects and client demos.
+    
 
-Join us in **shaping the future of agentic reliability**, and help define the standard for safe, auditable, and self-healing AI operations.
+🧠 What Makes ARF Unique
+------------------------
+
+*   **Policy-based Governance** – Automatic advisory evaluations using deterministic thresholds.
+    
+*   **Hybrid Risk Engine** – Combines **online conjugate priors**, **offline HMC/NUTS logistic regression**, and hyperpriors.
+    
+*   **Deterministic Decisions** – Clear approve/deny/escalate outputs for auditability.
+    
+*   **Semantic Memory Integration** – Context-aware recommendations using FAISS retrieval of past incidents.
+    
+*   **Control Plane Dashboard** – Comprehensive insights on infrastructure reliability, policy compliance, and system health.
+    
+
+📊 Key Mathematical Insights
+----------------------------
+
+ConceptImplementation**Conjugate Priors**Beta priors updated online per category for fast risk calibration**HMC Sampling**Offline logistic regression with NUTS, serialized for hot-loading**Risk Fusion**Weighted combination of online, hyperprior, and HMC outputs**DPT**Approve if P(failure) < 0.2, Deny if >0.8, else Escalate
+
+🏛 Governance & Community
+-------------------------
+
+ARF is guided by transparency, security, collaboration, and ethics.**How to Contribute:**
+
+1.  Fork any repository, make your changes, and submit a pull request.
+    
+2.  Participate in **Discussions** or **open issues** to propose features or report bugs.
+    
+3.  Follow Contribution Guidelines.
+    
+4.  Join the research community to extend hybrid Bayesian reasoning, semantic memory, and agentic reliability.
+    
+
+📬 Contact & Community
+----------------------
+
+*   **Email:** petter2025us@outlook.com
+    
+*   **LinkedIn:** [Juan Petter](https://www.linkedin.com/in/petterjuan)
+    
+*   **Book a 30-min call:** [Calendly](https://calendly.com/)
+    
+*   **Documentation:** [ARF Spec](https://arf-foundation.github.io/arf-spec/)
+    
+*   **Hugging Face Spaces:** [ARF v4 Dashboard](https://huggingface.co/spaces/A-R-F/Agentic-Reliability-Framework-v4)
+    
+
+Join us in **shaping the future of agentic reliability**, making AI systems **provably safe, auditable, and self-healing** across cloud and hybrid environments.**© 2026 ARF Foundation – Open Source (Apache 2.0)**
