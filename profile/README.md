@@ -71,3 +71,34 @@ Live Dashboard: [ARF Dashboard](https://arf-frontend-sandy.vercel.app/)
 curl -X POST https://huggingface.co/spaces/A-R-F/Agentic-Reliability-Framework-API/api/v1/incidents/evaluate
 ```
 
+*   **Frontend Dashboard**: [ARF Dashboard](https://arf-frontend-sandy.vercel.app/) – Real-time governance visuals.
+    
+
+🧑‍💻 Contributing
+------------------
+
+We welcome contributions from developers, researchers, and enthusiasts. To get involved:
+
+1.  Fork any repository, make your changes, and submit a pull request.
+    
+2.  Report issues or feature requests in the Discussions tab.
+    
+3.  Follow our Contribution Guidelines.
+    
+
+**License**: Apache 2.0
+
+📬 Contact
+----------
+
+*   Email: petter2025us@outlook.com
+    
+*   LinkedIn: Juan Petter
+    
+*   Book a 30-min call: [Calendly](https://calendly.com/)
+    
+
+Join us to make ARF the **standard for reliable AI operations**.
+
+© 2026 ARF Foundation – Open source (Apache 2.0)Documentation: [ARF Spec](https://arf-foundation.github.io/arf-spec/)
+
