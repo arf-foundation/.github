@@ -1,6 +1,6 @@
 # Agentic Reliability Framework (ARF) 👋
 
-<img src="assets/ARF%20-%20Primary%20Logo.png" alt="ARF Logo" width="200"/>
+<img src="https://raw.githubusercontent.com/arf-foundation/.github/main/assets/ARF%20-%20Primary%20Logo.png" alt="ARF Logo" width="200"/>
 
 Auditable cloud governance powered by **Bayesian intelligence**. Build reliable, observable, and self-healing AI systems for real-world infrastructure.
 
