@@ -1,10 +1,28 @@
 {
-  "pinned_repositories": [
-    "arf-foundation/agentic_reliability_framework",
-    "arf-foundation/arf-api",
-    "arf-foundation/arf-frontend",
-    "arf-foundation/arf-spec",
-    "arf-foundation/research",
-    "arf-foundation/Start-ups"
+  "pinnedRepositories": [
+    {
+      "repositoryName": "agentic_reliability_framework",
+      "owner": "arf-foundation"
+    },
+    {
+      "repositoryName": "arf-api",
+      "owner": "arf-foundation"
+    },
+    {
+      "repositoryName": "arf-frontend",
+      "owner": "arf-foundation"
+    },
+    {
+      "repositoryName": "arf-spec",
+      "owner": "arf-foundation"
+    },
+    {
+      "repositoryName": "research",
+      "owner": "arf-foundation"
+    },
+    {
+      "repositoryName": "Start-ups",
+      "owner": "arf-foundation"
+    }
   ]
 }
