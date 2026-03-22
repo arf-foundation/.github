@@ -28,7 +28,7 @@ ARF is designed to make AI operations **provably safe, auditable, and fully tran
 | [arf-frontend](https://github.com/arf-foundation/arf-frontend) | Next.js dashboard for real-time visualizations of decisions, risk scores, and simulations | TypeScript |
 | [arf-spec](https://github.com/arf-foundation/arf-spec) | Canonical specification: data models, decision rules, and API contracts | Markdown |
 | [research](https://github.com/arf-foundation/research) | Experimental research: hallucination detection, vector memory, anomaly analysis | Python |
-| [Start-ups](https://github.com/arf-foundation/Start-ups) | Pilot projects, early ecosystem experiments, and client demos | Various |
+| [Enterprise](https://github.com/arf-foundation/Enterprise) | Pilot projects, early ecosystem experiments, and client demos | Various |
 
 ---
 
