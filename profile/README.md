@@ -28,7 +28,7 @@ ARF is designed to make AI operations **provably safe, auditable, and fully tran
 | [arf-frontend](https://github.com/arf-foundation/arf-frontend) | Next.js dashboard for real-time visualizations of decisions, risk scores, and simulations | TypeScript |
 | [arf-spec](https://github.com/arf-foundation/arf-spec) | Canonical specification: data models, decision rules, and API contracts | Markdown |
 | [research](https://github.com/arf-foundation/research) | Experimental research: hallucination detection, vector memory, anomaly analysis | Python |
-| [Enterprise](https://github.com/arf-foundation/Enterprise) | Pilot projects, early ecosystem experiments, and client demos | Various |
+| [enterprise](https://github.com/arf-foundation/Enterprise) | Pilot projects, early ecosystem experiments, and client demos | Various |
 
 ---
 
@@ -40,7 +40,7 @@ ARF is designed to make AI operations **provably safe, auditable, and fully tran
 | **API Control Plane** | FastAPI service exposing advisory endpoints | [API Repo](https://github.com/arf-foundation/arf-api) |
 | **Frontend UI** | Dashboard for risk visualization & multi-agent simulations | [Frontend Repo](https://github.com/arf-foundation/arf-frontend) |
 | **Research** | Mathematical foundations and experimental models | [Research Repo](https://github.com/arf-foundation/research) |
-| **Enterprise** | Advanced compliance, audit trails, and premium support | Contact for details |
+| **Enterprise** | Advanced compliance, Audit trails, Autonomous execution, Premium support | Contact for details |
 
 ---
 
