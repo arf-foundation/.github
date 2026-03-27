@@ -76,7 +76,7 @@ ARF is designed to make AI operations **provably safe, auditable, and fully tran
 **Example API call:**
 
 ```bash
-curl -X POST https://huggingface.co/spaces/A-R-F/Agentic-Reliability-Framework-API/api/v1/incidents/evaluate \
+curl -X POST https://huggingface.co/spaces/A-R-F/Agentic-Reliability-Framework-API/v1/incidents/evaluate \
 -H "Content-Type: application/json" \
 -d '{"incident": {"type": "access_request", "user_role": "dev"}}'
 ```
