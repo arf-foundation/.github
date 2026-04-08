@@ -4,7 +4,7 @@
 
 Auditable cloud governance powered by **Bayesian intelligence**. Build reliable, observable, and self-healing AI systems for real-world infrastructure.
 
-Live Dashboard: [ARF Dashboard](https://arf-frontend-sandy.vercel.app/)  
+ARF Control Center: [ARF Control Center](https://arf-frontend-sandy.vercel.app/)  
 
 ---
 
