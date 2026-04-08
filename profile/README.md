@@ -23,7 +23,7 @@ ARF is designed to make AI operations **provably safe, auditable, and fully tran
 
 | Repository | Description | Language |
 |------------|-------------|---------|
-| [agentic_reliability_framework](https://github.com/arf-foundation/agentic-reliability-framework) | OSS advisory engine: deterministic probability thresholds & hybrid Bayesian inference | Python |
+| [agentic_reliability_framework](https://github.com/arf-foundation/agentic-reliability-framework) | OSS advisory engine: expected loss minimisation & hybrid Bayesian inference | Python |
 | [arf-api](https://github.com/arf-foundation/arf-api) | FastAPI-based control plane for ARF, providing cloud governance APIs | Python |
 | [arf-frontend](https://github.com/arf-foundation/arf-frontend) | Next.js dashboard for real-time visualizations of decisions, risk scores, and simulations | TypeScript |
 | [arf-spec](https://github.com/arf-foundation/arf-spec) | Canonical specification: data models, decision rules, and API contracts | Markdown |
@@ -48,7 +48,7 @@ ARF is designed to make AI operations **provably safe, auditable, and fully tran
 
 - **Bayesian Risk Scoring**: Conjugate priors + HMC for calibrated, probabilistic uncertainty.
 - **Semantic Memory**: FAISS-based retrieval for context-aware decision-making.
-- **Deterministic Probability Thresholds (DPT)**: Approve (<0.2), Deny (>0.8), Escalate (0.2–0.8).
+- **Expected Loss Minimisation**: Selects the optimal action (approve, deny, escalate) by balancing risk, cost, and uncertainty using Bayesian expected loss formulas.
 - **Multi-Agent Orchestration**: Automated anomaly detection, root cause analysis, forecasting.
 - **Policy Composability**: AND/OR/NOT combinators to define complex advisory rules.
 - **Traceability & Audit**: Each decision is fully auditable, stored, and queryable.
@@ -62,7 +62,7 @@ ARF is designed to make AI operations **provably safe, auditable, and fully tran
 | Conjugate Priors | Per-category Beta priors updated online with outcomes | Fast, low-latency Bayesian learning for operational decisions |
 | HMC Sampling | Logistic regression using NUTS | Captures complex correlations offline and serializes for hot-loading |
 | Risk Fusion | Weighted combination of conjugate, hyperprior, and HMC estimates | Dynamically adjusts to new data and evolving environment |
-| DPT Thresholds | Approve if P(failure)<0.2, Deny if >0.8, else Escalate | Clear and deterministic for operational compliance |
+| Expected Loss Minimisation | Compute expected loss for each action: L_approve, L_deny, L_escalate with configurable cost constants; choose action with smallest loss. | Dynamically balances risk, cost, and uncertainty; more expressive than fixed thresholds. |
 | Semantic Memory | FAISS vector retrieval of similar past incidents | Provides historical context to improve policy decisions |
 | Multi-Agent Simulations | Agents detect, forecast, and resolve anomalies | Supports scenario testing and autonomous healing |
 
@@ -91,7 +91,7 @@ The **ARF Dashboard** provides real-time, interactive governance visuals, multi-
 |---------|-------------|--------|
 | **Real-Time Governance Visuals** | Dynamic charts and gauges reflecting risk, policy compliance, and system health. | Immediate insight into operational status and anomalies. |
 | **Multi-Agent Orchestration** | Visualization of autonomous agents performing anomaly detection, root-cause analysis, and policy evaluation. | Understand complex agent interactions and automated decisions at a glance. |
-| **Risk Metrics & Scoring** | Bayesian risk scoring, confidence intervals, and DPT thresholds are displayed per action or incident. | Supports data-driven, auditable decision-making. |
+| **Risk Metrics & Scoring** | Bayesian risk scoring, confidence intervals, and expected loss breakdowns are displayed per action or incident. | Supports data-driven, auditable decision-making. |
 | **Historical Trends & Alerts** | Aggregated system performance and decision logs over time. | Enables predictive insights and forensic analysis. |
 | **Actionable Controls** | Approve, Deny, or Escalate actions directly from the dashboard. | Minimizes response latency and ensures deterministic operational compliance. |
 
@@ -152,4 +152,4 @@ Reach out to join, collaborate, or explore integrations:
 - **License**: Apache 2.0  
 - **Full Documentation & Specifications**: [ARF Spec](https://arf-foundation.github.io/arf-spec/)  
 
-> All modules, dashboards, and APIs are **open-source**, fully auditable, and built with **hybrid Bayesian inference and deterministic probability thresholds** at their core.
+> All modules, dashboards, and APIs are **open-source**, fully auditable, and built with **hybrid Bayesian inference and expected loss minimisation** at their core.
