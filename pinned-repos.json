@@ -1,11 +1,7 @@
 {
   "pinnedRepositories": [
     {
-      "repositoryName": "agentic_reliability_framework",
-      "owner": "arf-foundation"
-    },
-    {
-      "repositoryName": "arf-api",
+      "repositoryName": "arf-spec",
       "owner": "arf-foundation"
     },
     {
@@ -13,15 +9,7 @@
       "owner": "arf-foundation"
     },
     {
-      "repositoryName": "arf-spec",
-      "owner": "arf-foundation"
-    },
-    {
-      "repositoryName": "research",
-      "owner": "arf-foundation"
-    },
-    {
-      "repositoryName": "Start-ups",
+      "repositoryName": "pitch-deck",
       "owner": "arf-foundation"
     }
   ]
