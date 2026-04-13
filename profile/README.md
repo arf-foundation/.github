@@ -1,155 +1,123 @@
-# Agentic Reliability Framework (ARF) 👋
+# Agentic Reliability Framework (ARF) – Stewarded Governance for AI Systems
 
 <img src="https://raw.githubusercontent.com/arf-foundation/.github/main/assets/ARF%20-%20Primary%20Logo.png" alt="ARF Logo" width="200"/>
 
-Auditable cloud governance powered by **Bayesian intelligence**. Build reliable, observable, and self-healing AI systems for real-world infrastructure.
+**Auditable cloud governance powered by Bayesian intelligence.** Build reliable, observable, and self‑healing AI systems for real‑world infrastructure.
 
-ARF Control Center: [ARF Control Center](https://arf-frontend-sandy.vercel.app/)  
+🔐 **The core ARF engine is access‑controlled and not open source.**  
+It is available only to qualified pilots and enterprise customers under **outcome‑based pricing**.
 
----
-
-## 🌟 Our Vision
-
-ARF is designed to make AI operations **provably safe, auditable, and fully transparent**. Our core mission:
-
-- ✅ Enable **provably safe AI operations** in cloud, hybrid, and multi-agent environments.
-- 🧮 Provide **mathematically rigorous advisory engines** for deterministic and probabilistic governance.
-- 🌐 Build a **community of engineers, researchers, and practitioners** shaping next-generation reliable AI systems.
-- 🔍 Offer **full traceability** of decisions through auditable logs, semantic memory, and hybrid Bayesian inference.
+👉 [ARF Control Center (public demo UI)](https://arf-frontend-sandy.vercel.app/)
 
 ---
 
-## 📌 Pinned Repositories
+## 🎯 Our Mission
+
+ARF makes AI operations **provably safe, auditable, and transparent**.  
+We provide a **mathematically rigorous governance layer** for deterministic and probabilistic decision‑making in production AI systems.
+
+- ✅ Enable **provably safe AI operations** in cloud, hybrid, and multi‑agent environments.
+- 🧮 Deliver **expected loss minimisation** and **hybrid Bayesian inference** for calibrated risk scoring.
+- 🔍 Offer **full traceability** through auditable logs, semantic memory, and transparent decision records.
+- 🧭 **Steward the framework** – not a free‑for‑all, but a protected, pilot‑first product.
+
+---
+
+## 📌 Pinned Repositories (Public Only)
 
 | Repository | Description | Language |
-|------------|-------------|---------|
-| [agentic_reliability_framework](https://github.com/arf-foundation/agentic-reliability-framework) | OSS advisory engine: expected loss minimisation & hybrid Bayesian inference | Python |
-| [arf-api](https://github.com/arf-foundation/arf-api) | FastAPI-based control plane for ARF, providing cloud governance APIs | Python |
-| [arf-frontend](https://github.com/arf-foundation/arf-frontend) | Next.js dashboard for real-time visualizations of decisions, risk scores, and simulations | TypeScript |
+|------------|-------------|----------|
 | [arf-spec](https://github.com/arf-foundation/arf-spec) | Canonical specification: data models, decision rules, and API contracts | Markdown |
-| [research](https://github.com/arf-foundation/research) | Experimental research: hallucination detection, vector memory, anomaly analysis | Python |
-| [enterprise](https://github.com/arf-foundation/Enterprise) | Pilot projects, early ecosystem experiments, and client demos | Various |
+| [arf-frontend](https://github.com/arf-foundation/arf-frontend) | Next.js dashboard (public demo UI – uses mock data) | TypeScript |
+| [pitch-deck](https://github.com/arf-foundation/pitch-deck) | Public overview and vision | HTML |
+
+> 🔒 **Private repositories** (core engine, API control plane, enterprise code) are **not listed here**. Access is restricted to pilots and enterprise customers.
 
 ---
 
-## 🚀 Ecosystem Overview
+## 🚀 Ecosystem Overview (Public vs. Protected)
 
-| Module | Purpose | Link |
-|--------|---------|------|
-| **OSS Engine** | Core Bayesian models, semantic memory, and governance loop | [Engine Repo](https://github.com/arf-foundation/agentic-reliability-framework) |
-| **API Control Plane** | FastAPI service exposing advisory endpoints | [API Repo](https://github.com/arf-foundation/arf-api) |
-| **Frontend UI** | Dashboard for risk visualization & multi-agent simulations | [Frontend Repo](https://github.com/arf-foundation/arf-frontend) |
-| **Research** | Mathematical foundations and experimental models | [Research Repo](https://github.com/arf-foundation/research) |
-| **Enterprise** | Advanced compliance, Audit trails, Autonomous execution, Premium support | Contact for details |
-
----
-
-## 🧠 Key Capabilities
-
-- **Bayesian Risk Scoring**: Conjugate priors + HMC for calibrated, probabilistic uncertainty.
-- **Semantic Memory**: FAISS-based retrieval for context-aware decision-making.
-- **Expected Loss Minimisation**: Selects the optimal action (approve, deny, escalate) by balancing risk, cost, and uncertainty using Bayesian expected loss formulas.
-- **Multi-Agent Orchestration**: Automated anomaly detection, root cause analysis, forecasting.
-- **Policy Composability**: AND/OR/NOT combinators to define complex advisory rules.
-- **Traceability & Audit**: Each decision is fully auditable, stored, and queryable.
+| Module | Purpose | Access |
+|--------|---------|--------|
+| **Public Specification** (`arf-spec`) | Data models, API contracts, decision rules | ✅ Public (Apache 2.0) |
+| **Public Demo UI** (`arf-frontend`) | Dashboard with mock data, showcases concepts | ✅ Public (Apache 2.0) |
+| **Protected Core Engine** | Bayesian risk scoring, semantic memory, governance loop | 🔒 Pilot / Enterprise only |
+| **Protected API Control Plane** | FastAPI service exposing live endpoints | 🔒 Pilot / Enterprise only |
+| **Enterprise Extensions** | Advanced compliance, audit trails, outcome‑based pricing | 🔒 Enterprise only |
 
 ---
 
-## 📊 Mathematical Insights
+## 🧠 Key Capabilities (Conceptual Overview)
 
-| Concept | Implementation | Notes |
-|---------|----------------|-------|
-| Conjugate Priors | Per-category Beta priors updated online with outcomes | Fast, low-latency Bayesian learning for operational decisions |
-| HMC Sampling | Logistic regression using NUTS | Captures complex correlations offline and serializes for hot-loading |
-| Risk Fusion | Weighted combination of conjugate, hyperprior, and HMC estimates | Dynamically adjusts to new data and evolving environment |
-| Expected Loss Minimisation | Compute expected loss for each action: L_approve, L_deny, L_escalate with configurable cost constants; choose action with smallest loss. | Dynamically balances risk, cost, and uncertainty; more expressive than fixed thresholds. |
-| Semantic Memory | FAISS vector retrieval of similar past incidents | Provides historical context to improve policy decisions |
-| Multi-Agent Simulations | Agents detect, forecast, and resolve anomalies | Supports scenario testing and autonomous healing |
+- **Bayesian Risk Scoring** – Conjugate priors + HMC for calibrated uncertainty.
+- **Semantic Memory** – FAISS‑based retrieval of similar past incidents.
+- **Expected Loss Minimisation** – Chooses approve/deny/escalate by balancing risk, cost, and uncertainty.
+- **Multi‑Agent Orchestration** – Automated anomaly detection, root cause analysis, forecasting.
+- **Policy Composability** – AND/OR/NOT combinators for complex rules.
+- **Traceability & Audit** – Every decision is fully auditable and queryable.
+
+> ⚠️ These capabilities are implemented in the **protected core engine**, not in public demo assets.
 
 ---
 
-## 🎮 Live Demos
+## 🎮 Live Demos (Sanitised / Mock Data)
 
-- **OSS Demo**: [v4 Hugging Face Space](https://huggingface.co/spaces/A-R-F/Agentic-Reliability-Framework-v4) – Interactive Bayesian risk dashboard.  
-- **API Demo**: [v4 API](https://huggingface.co/spaces/A-R-F/Agentic-Reliability-Framework-API)
+- **UI Concept Demo** – [Hugging Face Space](https://huggingface.co/spaces/A-R-F/Agentic-Reliability-Framework-v4) – Interactive risk dashboard (mock data only).
+- **Sandbox API** – [Example endpoint](https://sandbox.arf.dev/docs) – Returns mock responses, not real Bayesian inference.
 
-**Example API call:**
+**Example sandbox call (returns mock data):**
 
 ```bash
-curl -X POST https://huggingface.co/spaces/A-R-F/Agentic-Reliability-Framework-API/v1/incidents/evaluate \
--H "Content-Type: application/json" \
--d '{"incident": {"type": "access_request", "user_role": "dev"}}'
+curl -X POST https://sandbox.arf.dev/v1/evaluate \
+  -H "Content-Type: application/json" \
+  -d '{"service_name":"api","event_type":"latency","severity":"high"}'
 ```
 
-## 🎛 Frontend Dashboard: ARF Dashboard
+The real engine is **not publicly accessible**.
 
-The **ARF Dashboard** provides real-time, interactive governance visuals, multi-agent orchestration, and detailed risk metrics. It is designed for both technical operators and executive stakeholders to **monitor, evaluate, and guide AI operations** with confidence.
+## 🧑‍💻 Contributing (Public Repositories Only)
 
-**Key Features:**
+We accept **limited contributions** to public repositories (`arf-spec`, `arf-frontend`, `pitch-deck`) – bug fixes, documentation, demo improvements.  
+**We do not accept pull requests against private core repositories.**
 
-| Feature | Description | Benefit |
-|---------|-------------|--------|
-| **Real-Time Governance Visuals** | Dynamic charts and gauges reflecting risk, policy compliance, and system health. | Immediate insight into operational status and anomalies. |
-| **Multi-Agent Orchestration** | Visualization of autonomous agents performing anomaly detection, root-cause analysis, and policy evaluation. | Understand complex agent interactions and automated decisions at a glance. |
-| **Risk Metrics & Scoring** | Bayesian risk scoring, confidence intervals, and expected loss breakdowns are displayed per action or incident. | Supports data-driven, auditable decision-making. |
-| **Historical Trends & Alerts** | Aggregated system performance and decision logs over time. | Enables predictive insights and forensic analysis. |
-| **Actionable Controls** | Approve, Deny, or Escalate actions directly from the dashboard. | Minimizes response latency and ensures deterministic operational compliance. |
+1. Open an issue describing your proposed change.
+2. Wait for a maintainer to assign the issue.
+3. Sign a Contributor License Agreement (CLA) if requested.
+4. Submit a pull request referencing the issue.
 
-💡 **Psychological Triggers**:  
-- Color-coded risk levels for immediate visual prioritization.  
-- Hoverable tooltips for deep technical insights without overwhelming the interface.  
-- Notification badges for escalations, anomalies, or policy violations.  
+All changes are reviewed and merged at the founder’s discretion.
 
-**Access Dashboard:** [ARF Dashboard](https://arf-frontend-sandy.vercel.app/)
+For questions about the protected engine or pilot access, please **do not open issues** – use the contact details below.
 
 ---
 
-## 🧑‍💻 Contributing to ARF
+## 📬 Pilot Access & Contact
 
-We welcome **developers, researchers, and AI enthusiasts** to collaborate with the ARF ecosystem. Contributions accelerate reliability, expand capabilities, and improve overall AI governance.
-
-**How to Contribute:**
-
-1. **Fork & Submit Pull Requests**  
-   - Clone any repository, make improvements, and submit a PR.  
-   - Provide clear descriptions, references to issues, and tests where applicable.
-
-2. **Report Issues or Feature Requests**  
-   - Use the **Discussions** tab for ideation, bug reporting, and feature requests.  
-   - Prioritize reproducibility and provide sample inputs/outputs if possible.
-
-3. **Follow Contribution Guidelines**  
-   - Adhere to coding standards, testing requirements, and review protocols.  
-   - Ensure all new code is compatible with **Python 3.10+, FastAPI, and Next.js** environments.
-
-4. **Feedback on Dashboard & API**  
-   - Evaluate dashboards, API outputs, and risk scoring models.  
-   - Suggest improvements to enhance user experience, model calibration, or observability.
-
-**Why Contribute?**  
-- Your contributions directly impact **provably safe AI operations**.  
-- Collaborators are recognized in release notes and GitHub contributors graphs.  
-- Gain **hands-on experience** with hybrid Bayesian inference, multi-agent orchestration, and enterprise-grade AI governance.
-
----
-
-## 📬 Contact & Engagement
-
-Reach out to join, collaborate, or explore integrations:
+The core ARF engine is **not open source**. To request pilot access (time‑limited free trial) or enterprise licensing, contact us directly:
 
 | Method | Details |
 |--------|---------|
 | **Email** | petter2025us@outlook.com |
-| **LinkedIn** | [Juan Petter](https://www.linkedin.com/in/juan-petter/) |
-| **Book a Call** | [30-Min Consultation](https://calendly.com/) |
+| **LinkedIn** | [Juan Petter](https://www.linkedin.com/in/petterjuan/) |
+| **Book a Call** | [30‑Min Consultation](https://calendly.com/petter2025us/30min) |
 
-> Join us to make ARF the **standard for reliable AI operations**. Contribute, experiment, and shape the future of **auditable, self-healing AI systems**.  
+**When requesting access, please provide:**  
+- Your full name and organisation  
+- Use case description  
+- Expected monthly incident volume  
+- Cloud environment (AWS, Azure, GCP, on‑prem)
 
 ---
 
-## 📜 License & Documentation
+## 📜 License & Legal
 
-- **License**: Apache 2.0  
-- **Full Documentation & Specifications**: [ARF Spec](https://arf-foundation.github.io/arf-spec/)  
+- **Public repositories** (`arf-spec`, `arf-frontend`, `pitch-deck`) are licensed under **Apache 2.0**.
+- **The core engine and all private repositories are proprietary** – no license is granted for public use.
+- See the [NOTICE](https://github.com/arf-foundation/.github/blob/main/NOTICE) file for full details.
 
-> All modules, dashboards, and APIs are **open-source**, fully auditable, and built with **hybrid Bayesian inference and expected loss minimisation** at their core.
+> All modules, dashboards, and APIs that are **public** are open source (Apache 2.0).  
+> The **core Bayesian engine** is **not** open source – it is protected and access‑controlled.
+
+---
+
+*Stewarded by the founder – pilot‑first, outcome‑based pricing.*
