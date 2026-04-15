@@ -63,12 +63,12 @@ We provide a **mathematically rigorous governance layer** for deterministic and 
 ## 🎮 Live Demos (Sanitised / Mock Data)
 
 - **UI Concept Demo** – [Hugging Face Space](https://huggingface.co/spaces/A-R-F/Agentic-Reliability-Framework-v4) – Interactive risk dashboard (mock data only).
-- **Sandbox API** – [Example endpoint](https://sandbox.arf.dev/docs) – Returns mock responses, not real Bayesian inference.
+- **Sandbox API** – [Mock endpoint on Hugging Face](https://huggingface.co/spaces/A-R-F/ARF-Sandbox-API) – Returns mock responses, not real Bayesian inference. Interactive docs at `/docs`.
 
 **Example sandbox call (returns mock data):**
 
 ```bash
-curl -X POST https://sandbox.arf.dev/v1/evaluate \
+curl -X POST https://a-r-f-arf-sandbox-api.hf.space/v1/evaluate \
   -H "Content-Type: application/json" \
   -d '{"service_name":"api","event_type":"latency","severity":"high"}'
 ```
