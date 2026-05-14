@@ -56,31 +56,61 @@ They **do not** contain the proprietary core engine.
 The diagram below shows the separation between public‑facing layers and the protected private components.
 
 ```mermaid
-%%{init: {'theme': 'dark', 'themeVariables': { 'background': '#0d1117', 'primaryColor': '#1f6feb', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#3b82f6', 'lineColor': '#58a6ff', 'secondaryColor': '#238636', 'tertiaryColor': '#6e40c9'}}}%%
-flowchart TD
-    subgraph Public["🌐 Public Layer (Mock Data Only)"]
-        A["Landing Page / Demo Dashboard / Advisory Sandbox"]
+%%{init: {'theme': 'dark', 'themeVariables': {
+  'background': '#0d1117',
+  'primaryColor': '#1f6feb',
+  'primaryTextColor': '#ffffff',
+  'primaryBorderColor': '#3b82f6',
+  'lineColor': '#58a6ff',
+  'secondaryColor': '#238636',
+  'tertiaryColor': '#6e40c9',
+  'clusterBkg': '#161b22',
+  'clusterBorder': '#f0883e',
+  'titleColor': '#ffffff'
+}}}%%
+flowchart TB
+    subgraph Public["🌐 PUBLIC LAYER – Mock Data Only"]
+        direction TB
+        A["<b>Landing Page</b><br/>www.arf-ai.com"]
+        B["<b>Demo Dashboard</b><br/>Mock risk visualisation"]
+        C["<b>Advisory Sandbox API</b><br/>curl mock responses"]
     end
 
-    subgraph Private["🔒 Private Boundary (Access‑Controlled)"]
-        B["Governance Gateway (Go)<br/>Auth · Rate limiting · Routing · Audit log"]
-        C["Control Plane (FastAPI)<br/>Risk scoring · Policy evaluation · Quota management<br/>Prometheus · OTel · Wilson monitor"]
-        D["Core Engine (Python)<br/>Bayesian risk fusion · Operational memory<br/>Cost‑optimized decisioning · Epistemic uncertainty"]
-        E["Enterprise Layer (Rust)<br/>Deterministic enforcement · Execution ladder<br/>Cryptographic signing · Policy algebra"]
+    subgraph Boundary["🔒 PRIVATE BOUNDARY – Access‑Controlled"]
+        direction TB
+        subgraph Gateway["Governance Gateway (Go)"]
+            G["Auth · Rate limiting · Request routing<br/>Audit logging · TLS termination"]
+        end
+        subgraph ControlPlane["Control Plane (FastAPI)"]
+            CP["Risk scoring · Policy evaluation<br/>Quota management · Wilson monitor<br/>Prometheus metrics · OTel tracing"]
+        end
+        subgraph Engine["Protected Core Components"]
+            direction LR
+            subgraph Core["Core Engine (Python)"]
+                CE["Bayesian risk fusion<br/>Operational memory<br/>Cost‑optimized decisioning<br/>Epistemic uncertainty (CUDL)"]
+            end
+            subgraph Enterprise["Enterprise Layer (Rust)"]
+                EL["Deterministic enforcement<br/>Execution ladder<br/>Cryptographic signing<br/>Policy algebra (verified)"]
+            end
+        end
     end
 
-    A -- "private API boundary" --> B
-    B --> C
-    C --> D
-    C --> E
+    Public -->|"private API boundary<br/>(no real data)"| Gateway
+    Gateway --> ControlPlane
+    ControlPlane --> Core
+    ControlPlane --> Enterprise
 
+    %% Styling
     style Public fill:#161b22,stroke:#58a6ff,stroke-width:2px,color:#ffffff
-    style Private fill:#161b22,stroke:#f0883e,stroke-width:2px,stroke-dasharray: 8 4,color:#ffffff
-    style A fill:#1f6feb,stroke:#3b82f6,stroke-width:2px,color:#ffffff
-    style B fill:#6e40c9,stroke:#a371f7,stroke-width:2px,color:#ffffff
-    style C fill:#238636,stroke:#3fb950,stroke-width:2px,color:#ffffff
-    style D fill:#da3633,stroke:#f85149,stroke-width:2px,color:#ffffff
-    style E fill:#6e40c9,stroke:#a371f7,stroke-width:2px,color:#ffffff
+    style Boundary fill:#161b22,stroke:#f0883e,stroke-width:2px,stroke-dasharray: 8 4
+    style Gateway fill:#6e40c9,stroke:#a371f7,stroke-width:2px,color:#ffffff
+    style ControlPlane fill:#238636,stroke:#3fb950,stroke-width:2px,color:#ffffff
+    style Core fill:#1f6feb,stroke:#3b82f6,stroke-width:2px,color:#ffffff
+    style Enterprise fill:#da3633,stroke:#f85149,stroke-width:2px,color:#ffffff
+    style Engine fill:none,stroke:none
+
+    %% Link styling
+    linkStyle default stroke:#58a6ff,stroke-width:2px
 ```
 
 
