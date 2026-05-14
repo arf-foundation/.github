@@ -55,30 +55,33 @@ They **do not** contain the proprietary core engine.
 
 The diagram below shows the separation between public‑facing layers and the protected private components.
 
-┌──────────────────────────────────────────────────────┐
-│                    PUBLIC LAYER                      │
-│  Landing page · Demo dashboard · Advisory sandbox    │
-│  All mock data — real engine never exposed           │
-└────────────┬─────────────────────────────────────────┘
-             │  (private boundary)
-┌────────────▼─────────────────────────────────────────┐
-│               GOVERNANCE GATEWAY (Go)                │
-│  Auth · Rate limiting · Request routing · Audit log  │
-└────────────┬─────────────────────────────────────────┘
-             │
-┌────────────▼─────────────────────────────────────────┐
-│              CONTROL PLANE (FastAPI)                 │
-│  Risk scoring · Policy evaluation · Quota management │
-│  Wilson monitor · Prometheus metrics · OTel tracing  │
-└────────────┬─────────────────────────────────────────┘
-             │
-┌────────────▼────────────┬────────────────────────────┐
-│   CORE ENGINE (Python)  │  ENTERPRISE LAYER (Rust)   │
-│  Bayesian risk fusion   │  Deterministic enforcement  │
-│  Operational memory     │  Execution ladder           │
-│  Cost‑optimized decision│  Cryptographic signing      │
-│  Epistemic uncertainty  │  Policy algebra (verified)  │
-└─────────────────────────┴────────────────────────────┘
+```
+flowchart TD
+    subgraph Public["🌐 Public Layer (Mock Data Only)"]
+        A["Landing Page / Demo Dashboard / Advisory Sandbox"]
+    end
+
+    subgraph Private["🔒 Private Boundary (Access‑Controlled)"]
+        B["Governance Gateway (Go)<br/>Auth · Rate limiting · Routing · Audit log"]
+        C["Control Plane (FastAPI)<br/>Risk scoring · Policy evaluation · Quota management<br/>Prometheus · OTel · Wilson monitor"]
+        D["Core Engine (Python)<br/>Bayesian risk fusion · Operational memory<br/>Cost‑optimized decisioning · Epistemic uncertainty"]
+        E["Enterprise Layer (Rust)<br/>Deterministic enforcement · Execution ladder<br/>Cryptographic signing · Policy algebra"]
+    end
+
+    A -- "private API boundary" --> B
+    B --> C
+    C --> D
+    C --> E
+
+    style Public fill:#e8f4f8,stroke:#2c3e50,stroke-width:2px
+    style Private fill:#fff8e7,stroke:#d35400,stroke-width:2px,stroke-dasharray: 8 4
+    style A fill:#d4f1f9,stroke:#0c5460
+    style B fill:#fff3cd,stroke:#856404
+    style C fill:#d4edda,stroke:#155724
+    style D fill:#d1ecf1,stroke:#0c5460
+    style E fill:#f8d7da,stroke:#721c24
+```
+
 
 ## 🔐 Key Capabilities (Protected Engine)
 
