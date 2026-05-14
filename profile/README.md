@@ -55,7 +55,7 @@ They **do not** contain the proprietary core engine.
 
 The diagram below shows the separation between public‑facing layers and the protected private components.
 
-```
+```mermaid
 flowchart TD
     subgraph Public["🌐 Public Layer (Mock Data Only)"]
         A["Landing Page / Demo Dashboard / Advisory Sandbox"]
