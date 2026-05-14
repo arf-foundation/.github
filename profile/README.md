@@ -56,6 +56,7 @@ They **do not** contain the proprietary core engine.
 The diagram below shows the separation between public‑facing layers and the protected private components.
 
 ```mermaid
+%%{init: {'theme': 'dark', 'themeVariables': { 'background': '#0d1117', 'primaryColor': '#1f6feb', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#3b82f6', 'lineColor': '#58a6ff', 'secondaryColor': '#238636', 'tertiaryColor': '#6e40c9'}}}%%
 flowchart TD
     subgraph Public["🌐 Public Layer (Mock Data Only)"]
         A["Landing Page / Demo Dashboard / Advisory Sandbox"]
@@ -73,13 +74,13 @@ flowchart TD
     C --> D
     C --> E
 
-    style Public fill:#e8f4f8,stroke:#2c3e50,stroke-width:2px
-    style Private fill:#fff8e7,stroke:#d35400,stroke-width:2px,stroke-dasharray: 8 4
-    style A fill:#d4f1f9,stroke:#0c5460
-    style B fill:#fff3cd,stroke:#856404
-    style C fill:#d4edda,stroke:#155724
-    style D fill:#d1ecf1,stroke:#0c5460
-    style E fill:#f8d7da,stroke:#721c24
+    style Public fill:#161b22,stroke:#58a6ff,stroke-width:2px,color:#ffffff
+    style Private fill:#161b22,stroke:#f0883e,stroke-width:2px,stroke-dasharray: 8 4,color:#ffffff
+    style A fill:#1f6feb,stroke:#3b82f6,stroke-width:2px,color:#ffffff
+    style B fill:#6e40c9,stroke:#a371f7,stroke-width:2px,color:#ffffff
+    style C fill:#238636,stroke:#3fb950,stroke-width:2px,color:#ffffff
+    style D fill:#da3633,stroke:#f85149,stroke-width:2px,color:#ffffff
+    style E fill:#6e40c9,stroke:#a371f7,stroke-width:2px,color:#ffffff
 ```
 
 
