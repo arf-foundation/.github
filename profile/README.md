@@ -203,334 +203,176 @@ The real engine is **not publicly accessible**.
 
 ---
 
-## 🧑‍💻 Contributing (Public Repositories Only)
+## 🔬 Bayesian Validation of the Governance Loop
 
-We accept **limited contributions** to publicly listed repositories (`arf-spec`, `arf-frontend`, `pitch-deck`) – bug fixes, documentation, demo improvements.  
-**We do not accept pull requests against private core repositories.**
-
-1. Open an issue describing your proposed change.
-2. Wait for a maintainer to assign the issue.
-3. Sign a Contributor License Agreement (CLA) if requested.
-4. Submit a pull request referencing the issue.
-
-All changes are reviewed and merged at the founder’s discretion.
-
-For questions about the protected engine or pilot access, please **do not open issues** – use the contact details below.
-
----
-
-## 📬 Pilot Access & Contact
-
-The core ARF engine is **not publicly available**. To request pilot access (time‑limited free trial) or enterprise licensing, contact us directly:
-
-| Method | Details |
-|--------|---------|
-| **Email** | `juan@arf-ai.com` |
-| **LinkedIn** | [Juan Petter](https://www.linkedin.com/in/petterjuan/) |
-| **Book a Call** | [30‑Min Consultation](https://calendly.com/petter2025us/30min) |
-
-**When requesting access, please provide:**  
-- Your full name and organisation  
-- Use case description  
-- Expected monthly incident volume  
-- Cloud environment (AWS, Azure, GCP, on‑prem)
-
----
-
-## 📜 License & Legal
-
-- **Publicly listed repositories** (`arf-spec`, `arf-frontend`, `pitch-deck`) are shared under written terms – **not open source**.
-- **All private repositories** (core engine, API control plane, gateway, enterprise, research, pricing calculator) are **proprietary and access‑controlled** – no license is granted for public use without a written agreement.
-- See the [NOTICE](https://github.com/arf-foundation/.github/blob/main/NOTICE) file for full details.
-
-> All public demos, dashboards, and APIs use **mock data only**.  
-> The **core Bayesian engine** is **not publicly available** – it is protected and access‑controlled.
-
----
-
-## ❓ Frequently Asked Questions (FAQ)
-
-<details>
-<summary><strong>What is ARF?</strong></summary>
-ARF is a governance layer that evaluates infrastructure decisions through a calibrated risk model. It recommends one of three actions — approve, deny, or escalate — together with a confidence indicator and a full audit trail. The core engine is access‑controlled and available only to qualified pilots.
-</details>
-
-<details>
-<summary><strong>Is ARF publicly available?</strong></summary>
-No. ARF is proprietary and access‑controlled. All repositories are private, and access to code, specifications, and supporting materials is granted only through approved pilot or enterprise arrangements.
-</details>
-
-<details>
-<summary><strong>What’s the difference between the demo and the real engine?</strong></summary>
-The demo is illustrative and uses mock or advisory data. It is designed to explain the workflow, not expose the protected engine. The real system is private and available only through pilot or enterprise access.
-</details>
-
-<details>
-<summary><strong>How do I interpret the risk score?</strong></summary>
-The risk indicator is a value between 0 and 1. Higher values indicate higher estimated risk. The recommended action — approve, deny, or escalate — comes from a structured trade‑off model, not a fixed threshold, and includes a full, auditable justification.
-</details>
-
-<details>
-<summary><strong>Can I use the sandbox API for production?</strong></summary>
-No. The sandbox API returns only mock data and is rate‑limited. It is intended for demonstration and testing only. For production use, you need pilot access to the real engine.
-</details>
-
-<details>
-<summary><strong>What is Cost‑Optimized Decisioning?</strong></summary>
-The system evaluates the potential cost of each possible action based on configurable parameters and the current risk assessment. It then selects the action with the lowest expected impact, producing a human‑readable, auditable justification.
-</details>
-
-<details>
-<summary><strong>How many requests per second can the real engine handle?</strong></summary>
-Performance depends on deployment scale. For pilot customers, we provide guidance based on your expected volume. Enterprise customers receive SLAs and dedicated capacity.
-</details>
-
-<details>
-<summary><strong>What data is stored?</strong></summary>
-The engine stores audit logs (decisions, risk scores, justifications) for compliance. No raw customer data is retained beyond what is required for the audit trail. Contact us for detailed retention policies.
-</details>
-
-<details>
-<summary><strong>How can I engage with ARF?</strong></summary>
-ARF is not accepting public contributions. Collaboration is handled through private pilot, partner, or enterprise channels. Reach out to discuss possible involvement.
-</details>
-
-<details>
-<summary><strong>Where do I report a bug in the demo?</strong></summary>
-Contact us directly through the support or pilot request channel. We review issues from approved users and pilot participants.
-</details>
-
-<details>
-<summary><strong>Is there a community Slack?</strong></summary>
-There is an invite‑only Slack workspace for pilot customers and approved collaborators. [Join here](https://join.slack.com/t/arf-gnv9451/shared_invite/zt-3t2omlgwg-Zf5_jmy9EIU~b51kMJ8Zdg).
-</details>
-
-<details>
-<summary><strong>What license governs ARF materials?</strong></summary>
-ARF materials are proprietary and access‑controlled. Any access to code, specifications, or supporting materials is governed by written agreement and approved use terms.
-</details>
-
-<details>
-<summary><strong>Can I use the real engine in a commercial product?</strong></summary>
-Yes, under a pilot or enterprise agreement. Outcome‑based pricing applies. Contact us for details.
-</details>
-
----
-
-## 🗺️ Roadmap (Protected Development)
-
-The following capabilities are under active development for pilot and enterprise customers:
-
-| Feature | Target Availability | Description |
-|---------|---------------------|-------------|
-| Enhanced policy algebra | Q3 2026 | AND/OR/NOT combinators with temporal constraints |
-| Multi‑region audit federation | Q4 2026 | Cross‑region audit trail aggregation |
-| Real‑time anomaly detection | Q1 2027 | Streaming ML for pre‑decision alerts |
-| Cost‑based auto‑remediation | Q2 2027 | Automated healing actions within policy bounds |
-
-> Note: The roadmap is shared with qualified pilots under written terms. Dates are estimates and subject to change.
-
----
-
-## 🔒 Security & Compliance
-
-- **Deterministic enforcement** – Every policy decision is mechanically enforced; no silent overrides.
-- **Immutable audit logs** – All decisions are recorded with cryptographic signatures.
-- **Access control** – Role‑based access control (RBAC) with SSO integration for enterprise.
-- **Data privacy** – No raw customer data retained; only anonymised risk metrics and audit trails.
-- **Compliance readiness** – Designed to support SOC2, ISO 27001, and GDPR requirements.
-
-Pilot customers receive a full security architecture review and compliance package upon agreement.
-
----
-
-## 📊 Support Channels
-
-| Tier | Access | Response SLA |
-|------|--------|---------------|
-| Sandbox (public) | Community Slack, public issues | Best effort |
-| Pilot | Email, private Slack, scheduled office hours | < 24 hours (business days) |
-| Enterprise | Dedicated TAM, phone support, private Slack | < 4 hours (24/7) |
-
-For pilot and enterprise support, contact `support@arf-ai.com` or use the provided private channels.
-
----
-
-## 📝 Versioning & Changelog
-
-- **Public specification** (`arf-spec`) is versioned and changes are documented in its [CHANGELOG](https://github.com/arf-foundation/arf-spec/blob/main/CHANGELOG.md).
-- **Protected engine** versions are shared with pilot customers under written terms. No public changelog is provided.
-
-Current protected engine version: **4.2.0** (available to qualified pilots).
-
----
-
-## 🌐 Related Resources
-
-- [ARF Control Center (demo UI)](https://arf-frontend-sandy.vercel.app/)
-- [Public Specification (arf-spec)](https://github.com/arf-foundation/arf-spec)
-- [Pilot Request Form](https://arf-ai.com/signup)
-- [Slack Community (invite‑only for pilots)](https://join.slack.com/t/arf-gnv9451/shared_invite/zt-3t2omlgwg-Zf5_jmy9EIU~b51kMJ8Zdg)
-
----
-
-## 📄 Legal Footer
-
-© 2026 ARF Foundation. All repositories are private and access‑controlled. The core engine is proprietary. Selected materials are shared under written terms with qualified pilots and enterprise customers. Unauthorised access, copying, or distribution is prohibited.
-
----
-
-*Stewarded by the founder – pilot‑first, outcome‑based pricing.*
-
----
-
-## 📈 Calibration & Reliability Metrics (Protected Engine)
-
-ARF continuously measures its own calibration using **Expected Calibration Error (ECE)** and **reliability diagrams**. For each predicted risk score \( \hat{p} \), the true outcome \( y \in \{0,1\} \) is logged. Binning predictions into \( M \) bins of equal width:
+Every decision path is subject to **posterior predictive checks**. For a given infrastructure intent \(X\) and observed outcome \(y\) (success/failure), the model’s posterior predictive distribution is
 
 \[
-\text{ECE} = \sum_{m=1}^{M} \frac{|B_m|}{n} \left| \frac{1}{|B_m|} \sum_{i \in B_m} y_i - \frac{1}{|B_m|} \sum_{i \in B_m} \hat{p}_i \right|
+p(\tilde{y} \mid X, \mathcal{D}) = \int p(\tilde{y} \mid X, \theta) \, p(\theta \mid \mathcal{D}) \, d\theta,
 \]
 
-A well‑calibrated system yields ECE near zero. ARF exposes this metric via `/metrics` endpoint (Prometheus) and alerts if ECE exceeds configurable thresholds (default 0.05).
-
----
-
-## 🧵 Thread Safety & Concurrency Model
-
-All core components (`BetaStore`, `HyperpriorBetaStore`, `_PendingRiskCache`, `_component_risk_history`) are **thread‑safe** using fine‑grained locks (`threading.RLock`). The governance loop is **stateless** across calls, with per‑call deterministic RNG seeded from the intent ID. The engine supports concurrent evaluation of thousands of intents without blocking.
-
----
-
-## ⏱️ Time‑Decaying Risk Smoothing
-
-To avoid overreaction to single incidents, ARF applies exponential smoothing to the risk score per component:
+where \(\theta\) includes all conjugate, HMC, and hyperprior parameters. The governance loop’s calibration is validated using the **Bayesian p‑value**:
 
 \[
-\text{risk}_{\text{decayed}} = \lambda \cdot \text{risk}_{\text{prev}} + (1 - \lambda) \cdot \text{risk}_{\text{raw}}
+p_B = \Pr\bigl( T(\tilde{y}) \ge T(y) \mid X, \mathcal{D} \bigr),
 \]
 
-with \( \lambda = 0.9 \) (configurable). This smooths volatility and provides a more stable risk signal for long‑running services.
+with \(T\) a discrepancy measure (e.g., the Brier score). Well‑calibrated systems yield \(p_B \approx 0.5\). ARF computes this offline and exposes it in `/metrics` as `arf_calibration_p_value`.
 
----
-
-## 🧠 Semantic Memory – Operational Retrieval
-
-Past incidents are stored as nodes in a directed graph, indexed by FAISS (`IndexFlatL2`, 384‑dim embeddings). At query time, ARF retrieves the top‑\(k\) similar incidents (cosine similarity) and computes a weighted similarity score. This memory is **read‑only** in the OSS edition; enterprise editions support online updates and advanced indices (IVF, HNSW).
-
----
-
-## 🔁 Deterministic HealingIntent Serialization
-
-Every `HealingIntent` is cryptographically signed (when enforcement is enabled) and serialised to JSON with a deterministic field order. The deterministic ID is computed as:
+**Counterfactual analysis** extends this: for each denied action, we impute the counterfactual outcome if it had been approved using the **potential outcomes framework**:
 
 \[
-\text{id} = \text{SHA256}(\text{intent\_type} \| \text{component} \| \text{parameters\_canonical} \| \text{timestamp\_floor\_sec})
+\text{ITE} = Y_i(1) - Y_i(0),
 \]
 
-This guarantees that repeated evaluations with the same inputs produce the same ID, enabling deduplication and replay auditing.
-
----
-
-## 🚦 Wilson Confidence Gate for Model Promotion
-
-When a new HMC model is trained on historical data, it is **shadow‑deployed** for a probation period. The Wilson lower bound is computed daily; only when the bound exceeds `0.99999` (99.999% confidence) is the model promoted to production. This prevents regressions and ensures high‑confidence deployments.
-
----
-
-## 🧪 Epistemic Uncertainty – CUDL Shapley Attribution
-
-The **CUDL** (Causal Uncertainty Decomposition Layer) computes Shapley values for each uncertainty source:
+where \(Y_i(1)\) is the outcome under approval, \(Y_i(0)\) under denial. The expected **cost of a wrong decision** is then:
 
 \[
-\phi_i = \sum_{S \subseteq U \setminus \{i\}} \frac{|S|!(|U|-|S|-1)!}{|U|!}\bigl[ \psi(S \cup \{i\}) - \psi(S) \bigr]
+\mathbb{E}[\text{cost}_{\text{policy}}] = \mathbb{E}\bigl[ \mathbb{I}_{\text{deny}} \cdot \text{ITE} \cdot C_{\text{FN}} + \mathbb{I}_{\text{approve}} \cdot (1-\text{ITE}) \cdot C_{\text{FP}} \bigr].
 \]
 
-Where \(U = \{\text{hallucination}, \text{forecast\_uncertainty}, \text{data\_sparsity}\}\). This provides a breakdown of how much each factor contributes to the overall epistemic uncertainty \( \psi \). The results are included in the `metadata` of the `HealingIntent`.
+This counterfactual loss is logged for every decision and aggregated into a **policy regret** dashboard (enterprise only).
 
 ---
 
-## 🛡️ Deterministic Policy Algebra – Formal Guarantees
+## 🌳 Tree‑of‑Thought Reasoning for Decision Paths
 
-The policy language forms a Boolean algebra with evaluation homomorphism:
+The governance loop operates as a **tree of sequential thought** where each branch corresponds to a possible action sequence (approve → escalate → deny, etc.). The system evaluates each branch using **expected utility**:
 
 \[
-\begin{aligned}
-f(p \land q) &= f(p) \cup f(q) \\
-f(p \lor q) &= f(p) \cap f(q) \\
-f(\neg p) &= \overline{f(p)}
-\end{aligned}
+U(\text{path}) = \sum_{t=1}^{T} \gamma^{t-1} \cdot \mathbb{E}[u(a_t \mid s_t)],
 \]
 
-Where \(f(p)\) returns the set of violation strings (empty = allowed). This ensures that policies are **composable, reversible, and auditable**. The Rust‑backed enforcer (enterprise) provides a verified implementation that shadows the Python evaluator for divergence detection.
+with discount factor \(\gamma = 0.95\). The policy selects the branch that maximises \(U\). This is implemented via **dynamic programming over a finite horizon** (typically 3 steps). The branching factor is limited by the number of applicable policies and is computed on‑the‑fly.
+
+**Tree‑of‑thought validation** checks for **planning coherence**: the chosen action at time \(t\) must be consistent with the optimal action at time \(t-1\) under the same belief state. Deviations trigger an **alarm** and are recorded for human review.
 
 ---
 
-## ⚡ Performance Characteristics
+## 📊 Epistemic Uncertainty Decomposition with Shapley–Entropy
 
-| Operation | Typical latency (p99) | Throughput |
-|-----------|----------------------|-------------|
-| Risk evaluation (conjugate only) | < 5 ms | > 2000 req/s |
-| Risk evaluation (conjugate + HMC) | < 20 ms | > 500 req/s |
-| Epistemic uncertainty (with probe) | < 50 ms | > 200 req/s |
-| Semantic memory retrieval (k=5) | < 30 ms | > 300 req/s |
+Beyond the product‑of‑complements formula, ARF decomposes epistemic uncertainty using **information‑theoretic Shapley values**:
 
-All numbers are on a 2‑core, 8GB instance. Scaling is linear with CPU cores. Enterprise deployments can achieve 10× higher throughput.
+\[
+\phi_i^{\text{info}} = \sum_{S \subseteq U \setminus \{i\}} \frac{|S|!(|U|-|S|-1)!}{|U|!} \left[ H(\psi(S \cup \{i\})) - H(\psi(S)) \right],
+\]
 
----
-
-## 🔐 Auditable Logging & Forensics
-
-Every governance decision produces a structured log entry containing:
-
-- `timestamp` (UTC, nanosecond precision)
-- `intent_id` (deterministic)
-- `risk_score`, `variance`, `weights`
-- `expected_losses` (approve, deny, escalate)
-- `selected_action`
-- `epistemic_breakdown` (hallucination, forecast, sparsity)
-- `policy_violations` (list)
-- `user` (if available)
-
-Logs are written to a **write‑once, read‑many** (WORM) storage (enterprise). In OSS, they are rotated daily with a 30‑day retention.
+where \(H\) is the Shannon entropy of the uncertainty distribution. This gives the **reduction in uncertainty entropy** attributable to each source. The enterprise dashboard displays these values as a **waterfall chart**, enabling root‑cause analysis of high \( \psi \) incidents.
 
 ---
 
-## 📁 Repository Structure (Private vs Public)
+## 🧠 Enterprise Semantic Epistemic Layer (ESEL)
 
-| Repository | Visibility | Purpose |
-|------------|------------|---------|
-| `agentic_reliability_framework` | Private | Core engine (Bayesian, governance, memory) |
-| `arf-api` | Private | FastAPI control plane |
-| `arf-gateway` | Private | Go‑based auth & routing gateway |
-| `enterprise` | Private | Rust enforcement, audit, policy algebra |
-| `research` | Private | ECLIPSE hallucination probe, CUDL |
-| `arf-bayesian-pricing-calculator` | Private | Pricing engine with MCMC |
-| `arf-spec` | Public | Specification (shared under written terms) |
-| `arf-frontend` | Public | Demo dashboard (mock data) |
-| `pitch-deck` | Public | Public overview |
+ARF maintains an **ontology of risk factors** (hierarchical Bayesian network) with conditional probability tables learned from historical data. For a given intent, the engine runs **belief propagation** to compute marginal posteriors of unobserved latent variables (e.g., “operator fatigue”, “infrastructure health”). The network is defined as:
 
----
+\[
+P(\mathbf{Z}, \mathbf{X}) = \prod_{j=1}^{J} P(Z_j \mid \text{Pa}(Z_j)) \cdot \prod_{i=1}^{I} P(X_i \mid \text{Pa}(X_i)),
+\]
 
-## 🧰 Development Environment (Pilots Only)
+where \(Z_j\) are latent risk drivers, \(X_i\) observable metrics. The **epistemic score** is the variance of the posterior predictive distribution:
 
-Qualified pilots receive access to:
+\[
+\text{epistemic}_{\text{ESEL}} = \text{Tr}\bigl( \text{Cov}[\mathbf{Z} \mid \mathbf{X}] \bigr).
+\]
 
-- Private PyPI repository for the core engine (`pip install arf-core`)
-- Docker images of the full stack (control plane + gateway)
-- Terraform modules for AWS/Azure/GCP deployment
-- Sample client libraries in Python, Go, TypeScript
-- 30‑day free trial with 1,000 advisory evaluations / month
+This layer is **access‑controlled** and available only under enterprise agreements.
 
 ---
 
-## 📚 Further Reading (Internal, Access‑Controlled)
+## ⚖️ Counterfactual Fairness & Bias Detection
 
-- **White paper:** “Bayesian Governance for AI Infrastructure” (v4.2, shared under NDA)
-- **Security architecture review** (available upon pilot agreement)
-- **Compliance mapping** (SOC2, ISO27001, GDPR – evidence package)
-- **Performance benchmark report** (10‑node cluster, 10k req/s)
+Using **Pearl’s do‑calculus**, ARF audits decisions for demographic parity and equal opportunity. For a protected attribute \(A\) (e.g., region, user role), we compute:
+
+\[
+\text{CF fairness} = \bigl| P(\text{approve} \mid \text{do}(A=1), \mathbf{X}) - P(\text{approve} \mid \text{do}(A=0), \mathbf{X}) \bigr|.
+\]
+
+If the difference exceeds a threshold (default 0.1), the policy is flagged as potentially biased. A **counterfactual audit log** stores the imputed outcomes under all possible protected‑attribute values for every decision, enabling retrospective fairness analysis.
+
+---
+
+## 🔐 Mathematical Guarantees of Determinism
+
+**Theorem**: For a fixed `RiskEngine` state and identical `InfrastructureIntent` and context, the same `HealingIntent` (except `intent_id`, `created_at`, `deterministic_id`, `detected_at`, `age_seconds`) is returned with probability 1.
+
+**Proof sketch**:
+- All RNG calls use a deterministic seed: `seed = hash(intent_id) mod 2**32` (if no ID, a SHA‑256 of the full intent+context).
+- The `numpy.random.Generator` is seeded with this seed, and all sampling (conjugate, CVaR, etc.) uses this generator.
+- The `BetaStore`, `HyperpriorBetaStore`, and `_component_risk_history` are updated deterministically based solely on observed outcomes; no other mutable state influences the calculation.
+- The policy evaluator is deterministic by construction (no randomness).
+- The `HallucinationRisk` probe returns a deterministic function of its inputs (sigmoid with fixed coefficients).
+- Therefore, all intermediate values are functions of the same seed and inputs, yielding identical outputs.
+
+The formal proof is available in the enterprise security package.
+
+---
+
+## 🎯 Bayesian Optimisation of Cost Coefficients
+
+The cost coefficients \(C_{\text{FP}}, C_{\text{FN}}, C_{\text{review}}, \dots\) are not static; they are **tuned via Bayesian optimisation** to minimise total organisational loss:
+
+\[
+\mathcal{L}_{\text{org}}(C) = \sum_{t=1}^{T} \bigl( \mathbb{E}[L_{\text{approve}}] \cdot \mathbb{I}_{\text{approve}} + \mathbb{E}[L_{\text{deny}}] \cdot \mathbb{I}_{\text{deny}} + \mathbb{E}[L_{\text{escalate}}] \cdot \mathbb{I}_{\text{escalate}} \bigr).
+\]
+
+Using a **Gaussian process surrogate**, ARF explores the hyperparameter space and recommends new coefficients every 30 days (pilot customers) or continuously (enterprise). The acquisition function is **expected improvement**:
+
+\[
+\text{EI}(C) = \mathbb{E}\left[ \max(0, \mathcal{L}_{\text{min}} - \mathcal{L}(C)) \right].
+\]
+
+All optimisation runs are audited and can be reverted to previous states.
+
+---
+
+## 📈 Hierarchical Bayesian Model for Cross‑Category Risk
+
+The hyperprior model is extended to a **full hierarchical Dirichlet‑Multinomial** for multi‑category outcomes:
+
+\[
+\boldsymbol{\theta}_c \sim \text{Dirichlet}(\boldsymbol{\alpha}_c), \quad
+\boldsymbol{\alpha}_c \sim \text{Gamma}(\alpha_0, \beta_0) \text{ (elementwise)}.
+\]
+
+Posterior inference uses **Gibbs sampling** (via Pyro) with 1000 burn‑in steps. The resulting shrinkage estimates are used to compute **pooled risk scores** for categories with scarce data. This layer is enabled only when `use_hyperpriors=True` and Pyro is installed.
+
+---
+
+## 🛡️ Robustness to Adversarial Inputs – Bayesian Sensitivity Analysis
+
+For each incoming intent, ARF performs a **local sensitivity analysis** by perturbing input features within a trust region \(\epsilon\) (default 0.05) and measuring the maximum change in the final decision:
+
+\[
+\text{sensitivity} = \max_{\| \delta \|_\infty \le \epsilon} \bigl| \text{risk}(X + \delta) - \text{risk}(X) \bigr|.
+\]
+
+If sensitivity exceeds a threshold (0.2), the intent is flagged as **adversarially fragile** and automatically escalated for human review. The perturbation distribution is modelled as a Gaussian with covariance estimated from historical noise – a **Bayesian robust optimisation** approach.
+
+---
+
+## 🧰 Enterprise‑Only Extensions (Referenced)
+
+The following capabilities are **not** in the protected core engine; they are available under enterprise agreements:
+
+- **Real‑time anomaly detection** using online changepoint detection (Bayesian CUSUM)
+- **Automated healing actions** with safety bounds (constrained Bayesian optimisation)
+- **Federated learning** across multi‑region deployments (privacy‑preserving posterior aggregation)
+- **Explainable AI (XAI) module** – SHAP values for each feature in the HMC model
+- **Compliance report generator** – automated SOC2 / ISO27001 evidence collection
+
+For technical specifications, request the *Enterprise Technical Addendum*.
+
+---
+
+## 📚 References (Internal, Access‑Controlled)
+
+1. *Bayesian Decision Theory for AI Governance* (ARF Whitepaper v4.2)
+2. *Causal Inference in Policy Auditing* (Enterprise Technical Note 2026‑03)
+3. *Tree‑of‑Thought Planning for Autonomous Systems* (Internal Research Report)
+4. *Shapley‑Entropy Decomposition for Epistemic Uncertainty* (ARF Journal, forthcoming)
 
 Request via `juan@arf-ai.com`.
 
 ---
+
+*The mathematical guarantees, counterfactual analysis, and Bayesian optimisation layers ensure that ARF remains deterministic, auditable, and commercially credible under all conditions.*
