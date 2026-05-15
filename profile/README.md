@@ -138,7 +138,9 @@ All pricing is **shared under written terms**; no public price lists. Quotes are
 
 **Outcome‑based pricing** aligns incentives: you pay for verified risk reduction, not for features or API calls. This creates a partnership, not a vendor relationship.
 
----## 🌐 Live Demos (Mock Data Only)
+---
+
+## 🌐 Live Demos (Mock Data Only)
 
 - **Risk Dashboard** – [Hugging Face Space](https://huggingface.co/spaces/A-R-F/Agentic-Reliability-Framework-v4) – Interactive visualisation (mock data)
 - **Sandbox API** – [Mock endpoint](https://huggingface.co/spaces/A-R-F/ARF-Sandbox-API) – Returns simulated responses.
