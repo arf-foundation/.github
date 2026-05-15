@@ -1,77 +1,46 @@
 # NOTICE
 
-## ARF Foundation – `.github` Repository
+## Proprietary and Access‑Controlled
 
-This repository contains public organisation profile metadata (README, issue templates, workflow templates, etc.) and is licensed under the **Apache License, Version 2.0**.
+All software, specifications, documentation, and related materials provided by the ARF Foundation (collectively, the “ARF Materials”) are **proprietary** and **access‑controlled**. No ARF Materials are licensed under the Apache License, Version 2.0, or any other open source license, unless explicitly stated otherwise in a separate written agreement.
 
-A copy of the license can be found in the [LICENSE](./LICENSE) file.
+## Public Repositories (Reference Only)
 
----
+The following repositories are publicly visible for documentation and demonstration purposes only. They are **shared under written terms** and are not open source:
 
-## Important Clarification
+- `arf-spec` – Canonical specification (data models, API contracts, decision rules)
+- `arf-frontend` – Demo dashboard (mock data only)
+- `pitch-deck` – Public overview and vision
 
-**The Apache 2.0 license in this repository applies ONLY to the files within this specific repository (`.github`).**
+These repositories may be viewed, but may not be used for any commercial or production purpose without explicit written consent from the ARF Foundation.
 
-It does **not** apply to any other ARF repositories, including but not limited to:
+## Private Repositories (Access‑Controlled)
 
-| Repository | Status |
-|------------|--------|
-| `agentic_reliability_framework` | 🔒 Private – core engine |
-| `arf-api` | 🔒 Private – control plane |
-| `enterprise` | 🔒 Private – customer adaptations |
-| `research` | 🔒 Private – experimental methods |
-| `Start-ups` | 🔒 Private (if exists) |
-| Any other repository not explicitly marked as public | 🔒 Private |
+All other ARF repositories are **private and access‑controlled**, including but not limited to:
 
-These repositories are **proprietary, access‑controlled, and not open source**. They are available only to:
+- `agentic_reliability_framework` – Core engine (Bayesian risk scoring, governance loop)
+- `arf-api` – Control plane (FastAPI)
+- `arf-gateway` – Routing and authentication gateway
+- `enterprise` – Deterministic enforcement, audit trails
+- `research` – Experimental probes and internal models
+- `arf-bayesian-pricing-calculator` – Pricing engine
 
-- **Qualified pilot customers** (time‑limited free trial under mutual agreement)
-- **Enterprise licensees** (outcome‑based pricing tied to measurable risk reduction)
+Access to these repositories is granted only to qualified pilots and enterprise customers under a valid written agreement (e.g., Pilot Agreement, Enterprise Subscription Agreement).
 
----
+## No Open Source Licenses
 
-## License Summary for ARF Repositories
+No part of the ARF Materials is licensed under the Apache License, Version 2.0, the GNU General Public License, the MIT License, or any other open source license. Any references to such licenses in historical documentation are superseded by this notice.
 
-| Repository | License / Status |
-|------------|------------------|
-| `.github` (this repo) | Apache 2.0 (applies only to this repo) |
-| `arf-spec` | Apache 2.0 |
-| `arf-frontend` | Apache 2.0 |
-| `pitch-deck` | Apache 2.0 |
-| `agentic_reliability_framework` | **Proprietary** – no license granted for public use |
-| `arf-api` | **Proprietary** – no license granted for public use |
-| `enterprise` | **Proprietary** – no license granted for public use |
-| `research` | **Proprietary** – no license granted for public use |
+## Trademarks
 
----
-
-## Pilot Access & Contact
-
-To request access to the protected core engine, please email **petter2025us@outlook.com** with:
-
-- Your full name and organisation
-- Use case description
-- Expected monthly incident volume
-- Cloud environment (AWS, Azure, GCP, on‑prem)
-
-All access requests are reviewed by the founder.
-
----
-
-## Trademark Notice
-
-“ARF”, “Agentic Reliability Framework”, and the ARF logo are trademarks of the ARF Foundation.  
-Unauthorised use of these marks is prohibited without explicit written permission.
-
----
+“ARF”, “Agentic Reliability Framework”, and the ARF logo are trademarks of the ARF Foundation. Unauthorised use of these marks is prohibited without explicit written permission.
 
 ## Contact
 
-- Organisation: [https://github.com/arf-foundation](https://github.com/arf-foundation)
-- Public demo UI: [https://arf-frontend-sandy.vercel.app](https://arf-frontend-sandy.vercel.app)
-- Email: petter2025us@outlook.com
+For licensing inquiries, pilot access, or enterprise agreements:
+
+**Juan Petter** – juan@arf-ai.com
 
 ---
 
-*Last updated: 2026-04-13*  
 *Stewarded by the founder – pilot‑first, outcome‑based pricing.*
