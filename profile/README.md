@@ -8,7 +8,7 @@ ARF helps organisations make safe, accountable, and transparent decisions when u
 🔐 **The core ARF engine is access‑controlled and not publicly available.**  
 It is offered only to qualified pilots and enterprise customers under **outcome‑based pricing**.
 
-👉 [ARF Control Center (public demo UI – mock data only)](https://arf-frontend-sandy.vercel.app/)
+👉 [ARF Control Center](arf-ai.com)
 
 ---
 
