@@ -113,20 +113,32 @@ Pilot customers receive a **full security architecture review** and a **complian
 
 ---
 
-## 📈 Pilot Access & Outcome‑Based Pricing
+## 📈 Pricing & Engagement Models
 
-The core ARF engine is **not publicly available**. Access is granted through:
+ARF pricing is **hybrid and outcome‑based**, reflecting the value of risk reduction while covering operational costs.
 
-- **Pilot (time‑limited, free)** – For qualified organisations; includes founder‑led onboarding, access to protected engine, advisory evaluations only.
-- **Enterprise (commercial)** – Full deterministic enforcement, audit trails, SSO, SLA, outcome‑based pricing.
+- **Deployment cost:** $10,000 – $14,000 (one‑time, covers installation, integration, and initial calibration).
+- **Maintenance cost:** Determined via **Bayesian inference** – updated quarterly based on actual usage, incident volume, and risk reduction metrics. Typical range: $2,000 – $6,000/month.
+- **Paid training** for internal teams (engineering, security, compliance) – customisable, on‑site or remote.
+- **Retainer option** – includes ongoing governance tuning, policy updates, and priority support.
 
-**Outcome‑based pricing** means you pay only for verified risk reduction, measured via audited pre/post Bayesian scores. No per‑seat, no per‑request fees.
-
-**Request pilot access:** Provide your organisation, use case, expected incident volume, and cloud environment to `juan@arf-ai.com`.
+All pricing is **shared under written terms**; no public price lists. Quotes are provided after a brief qualification call.
 
 ---
 
-## 🌐 Live Demos (Mock Data Only)
+## 📜 Philosophy & Legal
+
+**Philosophy:** ARF is founded on the principle that **AI systems should be accountable, not autonomous**. Every decision that affects infrastructure must be traceable, justifiable, and controllable by human operators. The framework is built to **augment human judgment**, not replace it.
+
+**Legal framework:**
+- All code, specifications, and supporting materials are **proprietary and access‑controlled**.
+- Public repositories (`arf-spec`, `arf-frontend`, `pitch-deck`) are **shared under written terms** – not open source.
+- No license is granted for public use, redistribution, or reverse engineering.
+- Use of ARF requires a **written agreement** (pilot or enterprise) that explicitly defines permitted use, data handling, and liability.
+
+**Outcome‑based pricing** aligns incentives: you pay for verified risk reduction, not for features or API calls. This creates a partnership, not a vendor relationship.
+
+---## 🌐 Live Demos (Mock Data Only)
 
 - **Risk Dashboard** – [Hugging Face Space](https://huggingface.co/spaces/A-R-F/Agentic-Reliability-Framework-v4) – Interactive visualisation (mock data)
 - **Sandbox API** – [Mock endpoint](https://huggingface.co/spaces/A-R-F/ARF-Sandbox-API) – Returns simulated responses.
