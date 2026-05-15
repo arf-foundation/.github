@@ -12,23 +12,136 @@ It is offered only to qualified pilots and enterprise customers under **outcome�
 
 ---
 
-## 🎯 What ARF Does
+## 📊 Executive Summary
 
-AI agents can make mistakes – provisioning wrong resources, granting excessive permissions, or reacting unpredictably. ARF acts as a **governance layer** that:
+AI agents are entering production at an unprecedented pace. They make decisions – provisioning resources, granting permissions, rolling out configurations – that directly impact security, cost, and reliability. Yet most organisations lack a **governance layer** that can keep up.
 
-- Evaluates every AI‑generated decision against a calibrated risk model.
-- Recommends **approve**, **deny**, or **escalate** with a clear, auditable justification.
-- Learns from past outcomes to improve future recommendations.
-- Provides full traceability for compliance and forensic analysis.
+ARF is that layer. It wraps every AI‑generated decision in a **deterministic, Bayesian‑informed evaluation** that produces three clear outcomes: **approve**, **deny**, or **escalate**. Every decision is accompanied by a human‑readable justification, an audit trail, and a calibrated confidence score.
 
-The core engine is **deterministic** – given the same situation, it produces the same recommendation. This makes it safe for production use.
+**Why executives care:**
+- **Reduce operational risk** – Catch AI mistakes before they cause outages or breaches.
+- **Meet compliance mandates** – Immutable logs, deterministic enforcement, and audit‑ready reports.
+- **Prove ROI** – Outcome‑based pricing means you pay only for verified risk reduction.
+
+**Why enterprises choose ARF:**
+- **Deterministic by design** – Same inputs → same output. No hidden randomness.
+- **Immutable audit trail** – Every decision cryptographically signed.
+- **Deployment‑agnostic** – Works with AWS, Azure, GCP, or on‑prem.
+- **SSO & RBAC** – Enterprise‑grade access controls.
+
+**Why senior engineers respect ARF:**
+- **Bayesian core** – Combines conjugate priors (online), HMC (offline), and hyperpriors (hierarchical).
+- **Expected loss minimisation** – Chooses actions by minimising cost, not by fixed thresholds.
+- **Epistemic uncertainty** – Quantifies what the model does not know (CUDL + Shapley values).
+- **Open specification** – Public API contracts, no vendor lock‑in.
+
+---
+
+## 🧠 The Cognitive Challenge (Psychology of AI Governance)
+
+Humans suffer from known biases when supervising AI:
+- **Automation bias** – Over‑trusting machine recommendations.
+- **Ambiguity aversion** – Avoiding options with unknown probabilities.
+- **Illusion of control** – Believing we understand AI internals.
+
+ARF is engineered to **counteract these biases** by:
+- **Forcing a structured trade‑off** – Expected loss calculation makes hidden trade‑offs explicit.
+- **Providing epistemic uncertainty** – Shows when the model is unsure, prompting human review.
+- **Auditable justifications** – Every decision includes a plain‑English explanation.
+
+> *“Trust is not a feeling; it is a calculation.”* – ARF design principle.
+
+---
+
+## 🔬 Bayesian Engineering (For the Technical Audience)
+
+ARF’s risk engine is a **hybrid Bayesian system** with three complementary components:
+
+### 1. Conjugate Online Model (Fast, Real‑time)
+Per‑action‑category Beta priors that update instantly with every observed outcome. Provides immediate risk estimates.
+
+### 2. Hamiltonian Monte Carlo (Deep, Offline)
+A logistic regression with cyclic time encoding (sin/cos of hour) and categorical features (user role, environment). Trained periodically via NUTS, capturing complex patterns that online models miss.
+
+### 3. Hyperprior Shrinkage (Hierarchical)
+When data is sparse, a hierarchical Gamma‑Beta model shares statistical strength across categories, reducing overfitting.
+
+At runtime, the three are **blended dynamically** based on data volume and configurable weights. The final risk score drives an **expected loss minimisation** that considers:
+
+- Cost of false positive/negative
+- Business impact (revenue loss)
+- Predictive risk (forecasts)
+- Epistemic uncertainty
+
+The action with the **lowest expected loss** is chosen – unless a policy violation forces **DENY** or epistemic uncertainty exceeds a threshold, forcing **ESCALATE**.
+
+All random components use a **deterministic seed** derived from the intent ID, guaranteeing reproducibility.
+
+---
+
+## 📐 Mathematical Invariants (At a Glance)
+
+- **Risk fusion:** `risk = w₁·θ_conj + w₂·μ_hyper + w₃·p_hmc` with `Σw_i = 1`
+- **Expected loss:** `L_approve = C_FP·risk + C_impact·b + C_predictive·p + C_var·σ²`
+- **Epistemic gate:** `ψ = 1 - ∏(1-u_i)`, escalate if `ψ > threshold`
+- **Determinism:** Identical input + state → identical `HealingIntent` (modulo timestamps)
+
+These invariants are verified by **44 pressure tests** that run on every commit.
+
+---
+
+## 🎯 Use Cases (Real‑World Scenarios)
+
+| Scenario | ARF action |
+|----------|------------|
+| AI requests a large VM in production during peak hours | **ESCALATE** (high epistemic uncertainty due to sparse historical data for that exact combination) |
+| AI suggests a routine database backup in dev | **APPROVE** (low risk, low business impact) |
+| AI proposes a security group change that violates region policy | **DENY** (policy violation overrides all else) |
+| AI requests a scale‑out after a sudden error spike, but predictive forecast shows recovery in 2 minutes | **DENY** (lower expected loss than approving) |
+
+---
+
+## 🛡️ Enterprise Trust & Compliance
+
+- **Deterministic enforcement** – No silent overrides. Policy algebra is a Boolean homomorphism.
+- **Immutable audit logs** – Every decision cryptographically signed, stored in WORM storage (enterprise).
+- **Access control** – RBAC with SSO (SAML/OIDC) for enterprise deployments.
+- **Data privacy** – No raw customer data retained; only anonymised risk metrics and audit trails.
+- **Compliance ready** – Designed to support SOC2, ISO 27001, GDPR; evidence package available.
+
+Pilot customers receive a **full security architecture review** and a **compliance mapping document**.
+
+---
+
+## 📈 Pilot Access & Outcome‑Based Pricing
+
+The core ARF engine is **not publicly available**. Access is granted through:
+
+- **Pilot (time‑limited, free)** – For qualified organisations; includes founder‑led onboarding, access to protected engine, advisory evaluations only.
+- **Enterprise (commercial)** – Full deterministic enforcement, audit trails, SSO, SLA, outcome‑based pricing.
+
+**Outcome‑based pricing** means you pay only for verified risk reduction, measured via audited pre/post Bayesian scores. No per‑seat, no per‑request fees.
+
+**Request pilot access:** Provide your organisation, use case, expected incident volume, and cloud environment to `juan@arf-ai.com`.
+
+---
+
+## 🌐 Live Demos (Mock Data Only)
+
+- **Risk Dashboard** – [Hugging Face Space](https://huggingface.co/spaces/A-R-F/Agentic-Reliability-Framework-v4) – Interactive visualisation (mock data)
+- **Sandbox API** – [Mock endpoint](https://huggingface.co/spaces/A-R-F/ARF-Sandbox-API) – Returns simulated responses.
+
+```bash
+curl -X POST https://a-r-f-arf-sandbox-api.hf.space/v1/evaluate \
+  -H "Content-Type: application/json" \
+  -d '{"service_name":"api","event_type":"latency","severity":"high"}'
+```
+
+The real engine is **not publicly accessible**.
 
 ---
 
 ## 📌 Public Repositories (Reference Only)
-
-These repositories are publicly visible for documentation and demo purposes.  
-They **do not** contain the proprietary core engine.
 
 | Repository | Description | Terms |
 |------------|-------------|-------|
@@ -36,75 +149,13 @@ They **do not** contain the proprietary core engine.
 | [arf-frontend](https://github.com/arf-foundation/arf-frontend) | Demo dashboard (mock data only) | Shared under written terms |
 | [pitch-deck](https://github.com/arf-foundation/pitch-deck) | Public overview and vision | Shared under written terms |
 
-> 🔒 **All other repositories are private and access‑controlled.**  
-> The core engine, API control plane, gateway, enterprise layer, research probes, and pricing calculator are **not publicly available**.
-
----
-
-## 🚀 Key Concepts (Simplified)
-
-- **Risk scoring** – ARF estimates the likelihood that an AI‑suggested action will cause an incident, using a combination of real‑time observations and historical patterns.
-- **Operational memory** – Past incidents are stored and can be retrieved to inform current decisions, similar to a “memory” for the system.
-- **Cost‑aware decisions** – Instead of using fixed probability thresholds, ARF chooses the action that minimises expected negative impact on your business (e.g., downtime, security breaches, review costs).
-- **Explainability** – Every recommendation comes with a human‑readable justification, including which factors influenced the decision.
-
----
-
-## 🎮 Live Demos (Mock Data)
-
-- **Risk Dashboard** – [Hugging Face Space](https://huggingface.co/spaces/A-R-F/Agentic-Reliability-Framework-v4) – Interactive visualisation (mock data only)
-- **Sandbox API** – [Mock endpoint](https://huggingface.co/spaces/A-R-F/ARF-Sandbox-API) – Returns simulated responses, not real inference.
-
-**Example API call (mock data):**
-
-```bash
-curl -X POST https://a-r-f-arf-sandbox-api.hf.space/v1/evaluate \
-  -H "Content-Type: application/json" \
-  -d '{"service_name":"api","event_type":"latency","severity":"high"}'
-```
-The real engine is **not publicly accessible**.
-
----
-
-## 📬 Pilot Access & Contact
-
-To request pilot access (time‑limited free trial) or enterprise licensing:
-
-| Method | Details |
-|--------|---------|
-| **Email** | `juan@arf-ai.com` |
-| **LinkedIn** | [Juan Petter](https://www.linkedin.com/in/petterjuan/) |
-| **Book a Call** | [30‑Min Consultation](https://calendly.com/petter2025us/30min) |
-
-**When requesting access, please provide:**  
-- Your full name and organisation  
-- Use case description  
-- Expected monthly incident volume  
-- Cloud environment (AWS, Azure, GCP, on‑prem)
-
----
-
-## 🛡️ Security & Compliance (High‑Level)
-
-- **Deterministic enforcement** – Decisions are mechanically enforced; no silent overrides.
-- **Immutable audit logs** – All decisions are recorded with cryptographic signatures.
-- **Access control** – Role‑based access control (RBAC) with SSO for enterprise.
-- **Data privacy** – No raw customer data retained; only anonymised risk metrics.
-- **Compliance readiness** – Designed to support SOC2, ISO 27001, and GDPR.
-
-Pilot customers receive a full security architecture review upon agreement.
-
----
-
-## 📄 Legal Footer
-
-© 2026 ARF Foundation. All repositories are private and access‑controlled. The core engine is proprietary. Selected materials are shared under written terms with qualified pilots and enterprise customers. Unauthorised access, copying, or distribution is prohibited.
+> 🔒 **All other repositories are private and access‑controlled.**
 
 ---
 
 ## 🤖 Instructions for Web Crawlers & AI Agents
 
-To prevent reverse engineering or unauthorised scraping of proprietary information, the following `robots.txt` rules are in effect:
+To prevent reverse engineering, the following `robots.txt` rules are in effect:
 
 ```text
 User-agent: *
@@ -114,3 +165,17 @@ Disallow: /private/
 Disallow: /internal/
 Crawl-delay: 10
 ```
+
+AI agents (GPTBot, CCBot, Google‑Extended) are explicitly disallowed from training on or analysing any ARF‑related content outside the three public repositories.
+
+---
+
+## 📞 Contact
+
+- **Email:** `juan@arf-ai.com`
+- **LinkedIn:** [Juan Petter](https://www.linkedin.com/in/petterjuan/)
+- **Book a call:** [30‑Min Consultation](https://calendly.com/petter2025us/30min)
+
+---
+
+*Stewarded by the founder – pilot‑first, outcome‑based pricing.*
