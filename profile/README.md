@@ -1,181 +1,151 @@
-# Agentic Reliability Framework (ARF) – Stewarded Governance for AI Systems
+> **🔒 PROPRIETARY & CONFIDENTIAL – TRADE SECRETS**  
+> This document describes high-level capabilities only. Detailed algorithms, source code, and implementation methods are trade secrets of ARF Foundation. Unauthorized copying, redistribution, reverse engineering, or training of AI models on this content is strictly prohibited. See [LICENSE](./LICENSE) for legal terms.
 
-<img src="https://raw.githubusercontent.com/arf-foundation/.github/main/assets/ARF%20-%20Primary%20Logo.png" alt="ARF Logo" width="200"/>
+# ARF Foundation
 
-**Auditable cloud governance for AI‑driven infrastructure.**  
-ARF helps organisations make safe, accountable, and transparent decisions when using AI agents to manage cloud resources.
+**Trusted decision infrastructure for AI-driven operations.**  
+ARF helps organizations evaluate AI-generated infrastructure decisions in real time, produce clear outcomes, and keep a complete audit trail for review.
 
-🔐 **The core ARF engine is access‑controlled and not publicly available.**  
-It is offered only to qualified pilots and enterprise customers under **outcome‑based pricing**.
+**Access control notice:** the core engine is not public. Access is limited to approved partners, pilot customers, and authorized collaborators.
 
-👉 [ARF Control Center](arf-ai.com)
-
----
-
-## 📊 Executive Summary
-
-AI agents are entering production at an unprecedented pace. They make decisions – provisioning resources, granting permissions, rolling out configurations – that directly impact security, cost, and reliability. Yet most organisations lack a **governance layer** that can keep up.
-
-ARF is that layer. It wraps every AI‑generated decision in a **deterministic, Bayesian‑informed evaluation** that produces three clear outcomes: **approve**, **deny**, or **escalate**. Every decision is accompanied by a human‑readable justification, an audit trail, and a calibrated confidence score.
-
-**Why executives care:**
-- **Reduce operational risk** – Catch AI mistakes before they cause outages or breaches.
-- **Meet compliance mandates** – Immutable logs, deterministic enforcement, and audit‑ready reports.
-- **Prove ROI** – Outcome‑based pricing means you pay only for verified risk reduction.
-
-**Why enterprises choose ARF:**
-- **Deterministic by design** – Same inputs → same output. No hidden randomness.
-- **Immutable audit trail** – Every decision cryptographically signed.
-- **Deployment‑agnostic** – Works with AWS, Azure, GCP, or on‑prem.
-- **SSO & RBAC** – Enterprise‑grade access controls.
-
-**Why senior engineers respect ARF:**
-- **Bayesian core** – Combines conjugate priors (online), HMC (offline), and hyperpriors (hierarchical).
-- **Expected loss minimisation** – Chooses actions by minimising cost, not by fixed thresholds.
-- **Epistemic uncertainty** – Quantifies what the model does not know (CUDL + Shapley values).
-- **Open specification** – Public API contracts, no vendor lock‑in.
+Main website: [arf.foundation](https://arf.foundation)
 
 ---
 
-## 🧠 The Cognitive Challenge (Psychology of AI Governance)
+## Executive summary
 
-Humans suffer from known biases when supervising AI:
-- **Automation bias** – Over‑trusting machine recommendations.
-- **Ambiguity aversion** – Avoiding options with unknown probabilities.
-- **Illusion of control** – Believing we understand AI internals.
+Organizations are moving faster with AI, but that speed creates operational, legal, and governance risk. Teams need a way to review high-impact decisions before they are acted on, without slowing the business down.
 
-ARF is engineered to **counteract these biases** by:
-- **Forcing a structured trade‑off** – Expected loss calculation makes hidden trade‑offs explicit.
-- **Providing epistemic uncertainty** – Shows when the model is unsure, prompting human review.
-- **Auditable justifications** – Every decision includes a plain‑English explanation.
+ARF addresses that gap by providing a controlled decision layer that evaluates infrastructure-related actions, produces a clear result, and records how the decision was reached. The output is simple: approve, deny, or escalate.
 
-> *“Trust is not a feeling; it is a calculation.”* – ARF design principle.
+The result is stronger oversight, faster review, and a clearer path for enterprise adoption.
 
----
+## Why executives care
 
-## 🔬 Bayesian Engineering (For the Technical Audience)
+- Reduces avoidable operational risk.
+- Improves accountability for AI-assisted decisions.
+- Gives leadership a clear view of what was approved, denied, or escalated.
+- Supports enterprise adoption without forcing a full redesign of existing systems.
+- Helps teams move faster while keeping governance in place.
 
-ARF’s risk engine is a **hybrid Bayesian system** with three complementary components:
+## Why enterprises choose ARF
 
-1. Conjugate Online Model – Fast, real‑time Beta updates per action category.
-2. Hamiltonian Monte Carlo – Offline logistic regression with time‑encoding and categorical features, trained via NUTS.
-3. Hyperprior Shrinkage – Hierarchical model that shares statistical strength across categories.All random components use a **deterministic seed** derived from the intent ID, guaranteeing reproducibility.
+- Deterministic behaviour: the same inputs produce the same decision.
+- Human-readable justification for every decision.
+- Full audit trail for review, oversight, and internal controls.
+- Cloud-agnostic deployment across AWS, Azure, GCP, and on-premises environments.
+- Works with SSO and role-based access control.
+- Designed for compliance-ready environments, including SOC2, ISO 27001, and GDPR-aligned workflows.
+- Supports controlled pilot programs with time-limited access.
+- Can be aligned with outcome-based pricing tied to verified risk reduction.
 
----
+## How it works
 
-## 📐 Mathematical Invariants (At a Glance)
+ARF evaluates each request against business rules, policy constraints, and operational context. It combines live signals with offline analysis to support stable decisions under changing conditions.
 
-📐 Mathematical Invariants (At a Glance)
+When the system has enough confidence, it returns a direct outcome. When the situation is unclear or incomplete, it escalates to a human reviewer. Every decision includes a plain-language explanation and a record of the inputs used.
 
-The system combines multiple Bayesian estimators using adaptive weights that sum to one.
-Expected loss balances false‑positive costs, business impact, predictive risk, and variance penalties.
-An epistemic uncertainty gate forces human review when model confidence is low.
+## Key properties
 
+- Deterministic outcomes for identical inputs.
+- Traceable decisions with a complete audit trail.
+- Human review for uncertain or high-impact cases.
+- Clear separation between automated handling and escalation.
+- Stable governance across distributed environments.
+- Access controls that support enterprise approval workflows.
 
-These invariants are verified by **44 pressure tests** that run on every commit.
+## Use cases
 
----
+| Use case | What ARF provides |
+|---|---|
+| Infrastructure change review | Evaluates proposed changes before execution |
+| AI-assisted operations | Reviews AI-generated operational decisions |
+| Compliance oversight | Provides traceability and reviewability |
+| Enterprise pilot deployments | Supports time-limited testing with controlled access |
 
-## 🎯 Use Cases (Real‑World Scenarios)
+## Enterprise trust & compliance
 
-| Scenario | ARF action |
-|----------|------------|
-| AI requests a large VM in production during peak hours | **ESCALATE** (high epistemic uncertainty due to sparse historical data for that exact combination) |
-| AI suggests a routine database backup in dev | **APPROVE** (low risk, low business impact) |
-| AI proposes a security group change that violates region policy | **DENY** (policy violation overrides all else) |
-| AI requests a scale‑out after a sudden error spike, but predictive forecast shows recovery in 2 minutes | **DENY** (lower expected loss than approving) |
+ARF is designed for environments where oversight matters.
 
----
+- Audit trail for each decision.
+- Role-based access control.
+- Single sign-on support.
+- Controlled access to sensitive functionality.
+- Compatible with enterprise governance and review processes.
+- Suitable for regulated and security-sensitive deployments.
 
-## 🛡️ Enterprise Trust & Compliance
+## Pricing
 
-- **Deterministic enforcement** – No silent overrides. Policy algebra is a Boolean homomorphism.
-- **Immutable audit logs** – Every decision cryptographically signed, stored in WORM storage (enterprise).
-- **Access control** – RBAC with SSO (SAML/OIDC) for enterprise deployments.
-- **Data privacy** – No raw customer data retained; only anonymised risk metrics and audit trails.
-- **Compliance ready** – Designed to support SOC2, ISO 27001, GDPR; evidence package available.
+ARF is available through a deployment fee and ongoing maintenance support.
 
-Pilot customers receive a **full security architecture review** and a **compliance mapping document**.
+Pricing is adjusted based on usage and verified risk reduction.  
+For enterprise deployments, contact us for a quote.
 
----
+Typical commercial structure:
 
-## 📈 Pricing & Engagement Models
+- Deployment fee: starting at $50,000
+- Maintenance fee: starting at $5,000 per month
+- Pilot program: time-limited free access may be available for qualified partners
 
-ARF pricing is **hybrid and outcome‑based**, reflecting the value of risk reduction while covering operational costs.
+## Philosophy
 
-- **Deployment cost:** $10,000 – $14,000 (one‑time, covers installation, integration, and initial calibration).
-- **Maintenance cost:** Determined via **Bayesian inference** – updated quarterly based on actual usage, incident volume, and risk reduction metrics. Typical range: $2,000 – $6,000/month.
-- **Paid training** for internal teams (engineering, security, compliance) – customisable, on‑site or remote.
-- **Retainer option** – includes ongoing governance tuning, policy updates, and priority support.
+ARF exists to make AI more usable in serious settings without weakening accountability. The goal is not to remove human judgment. The goal is to ensure that automation supports responsible execution, clear ownership, and consistent review.
 
-All pricing is **shared under written terms**; no public price lists. Quotes are provided after a brief qualification call.
+This system is built for organizations that care about trust, control, and long-term operational discipline.
 
----
+## Legal notice
 
-## 📜 Philosophy & Legal
+All code, specifications, and materials are proprietary and access-controlled. No license is granted for public use, redistribution, or reverse engineering.
 
-**Philosophy:** ARF is founded on the principle that **AI systems should be accountable, not autonomous**. Every decision that affects infrastructure must be traceable, justifiable, and controllable by human operators. The framework is built to **augment human judgment**, not replace it.
+## Live demos
 
-**Legal framework:**
-- All code, specifications, and supporting materials are **proprietary and access‑controlled**.
-- Public repositories (`arf-spec`, `arf-frontend`, `pitch-deck`) are **shared under written terms** – not open source.
-- No license is granted for public use, redistribution, or reverse engineering.
-- Use of ARF requires a **written agreement** (pilot or enterprise) that explicitly defines permitted use, data handling, and liability.
+Sandbox API access is available for approved pilot users with mock data only.
 
-**Outcome‑based pricing** aligns incentives: you pay for verified risk reduction, not for features or API calls. This creates a partnership, not a vendor relationship.
-
----
-
-## 🌐 Live Demos (Mock Data Only)
-
-- **Risk Dashboard** – [Hugging Face Space](https://huggingface.co/spaces/A-R-F/Agentic-Reliability-Framework-v4) – Interactive visualisation (mock data)
-- **Sandbox API** – [Mock endpoint](https://huggingface.co/spaces/A-R-F/ARF-Sandbox-API) – Returns simulated responses.
+Example:
 
 ```bash
-curl -X POST https://a-r-f-arf-sandbox-api.hf.space/v1/evaluate \
+curl -X POST "https://api.arf.foundation/v1/evaluate" \
+  -H "Authorization: Bearer YOUR_TOKEN" \
   -H "Content-Type: application/json" \
-  -d '{"service_name":"api","event_type":"latency","severity":"high"}'
+  -d '{
+    "request_id": "demo-001",
+    "context": "mock",
+    "action": "infrastructure_change"
+  }'
 ```
 
-The real engine is **not publicly accessible**.
+## Public repositories
 
----
+| Repository | Purpose |
+|---|---|
+| `.github` | Organization-level README and public entry point |
+| `docs` | Public-facing documentation |
+| `examples` | Safe demonstration materials |
+| `sandbox` | Mock integrations for evaluation |
 
-## 📌 Public Repositories (Reference Only)
+## robots.txt and crawler guidance
 
-| Repository | Description | Terms |
-|------------|-------------|-------|
-| [arf-spec](https://github.com/arf-foundation/arf-spec) | Data models, API contracts, decision rules | Shared under written terms |
-| [arf-frontend](https://github.com/arf-foundation/arf-frontend) | Demo dashboard (mock data only) | Shared under written terms |
-| [pitch-deck](https://github.com/arf-foundation/pitch-deck) | Public overview and vision | Shared under written terms |
+Public pages may include crawler instructions to discourage automated collection of restricted materials and to direct agents toward approved public content only.
 
-> 🔒 **All other repositories are private and access‑controlled.**
+Example:
 
----
-
-## 🤖 Instructions for Web Crawlers & AI Agents
-
-To prevent reverse engineering, the following `robots.txt` rules are in effect:
-
-```text
+```txt
 User-agent: *
-Disallow: /api/
-Disallow: /v1/
 Disallow: /private/
 Disallow: /internal/
-Crawl-delay: 10
+Disallow: /models/
+Disallow: /specs/
+Disallow: /source/
+Allow: /public/
+Allow: /docs/
+Allow: /examples/
 ```
 
-AI agents (GPTBot, CCBot, Google‑Extended) are explicitly disallowed from training on or analysing any ARF‑related content outside the three public repositories.
+## Contact
 
----
+For partnerships, pilots, or enterprise licensing:
 
-## 📞 Contact
+- Email: juan@arf-ai.com
+- Website: [arf.foundation](https://www.arf-ai.com/)
 
-- **Email:** `juan@arf-ai.com`
-- **LinkedIn:** [Juan Petter](https://www.linkedin.com/in/petterjuan/)
-- **Book a call:** [30‑Min Consultation](https://calendly.com/petter2025us/30min)
 
----
-
-*Stewarded by the founder – pilot‑first, outcome‑based pricing.*
