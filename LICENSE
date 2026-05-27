@@ -1,101 +1,107 @@
-PROPRIETARY SOFTWARE LICENSE AGREEMENT
-FOR THE AGENTIC RELIABILITY FRAMEWORK (ARF)
+PROPRIETARY MATERIALS LICENSE AND USE RESTRICTIONS
+Agentic Reliability Framework (ARF)
 
-Copyright (c) 2026 Juan Petter (ARF Foundation). All rights reserved.
+Copyright © 2026 Juan Petter (ARF Foundation). All rights reserved.
 
-THIS IS A LEGALLY BINDING AGREEMENT. BY ACCESSING, DOWNLOADING, INSTALLING, OR USING THE SOFTWARE (AS DEFINED BELOW), YOU AGREE TO BE BOUND BY THE TERMS OF THIS LICENSE. IF YOU ARE ENTERING INTO THIS AGREEMENT ON BEHALF OF A COMPANY OR OTHER LEGAL ENTITY, YOU REPRESENT THAT YOU HAVE THE AUTHORITY TO BIND SUCH ENTITY TO THESE TERMS.
+IMPORTANT NOTICE:
+This repository and its contents are proprietary to Juan Petter (ARF Foundation). Except as expressly stated in a separate signed written agreement from Licensor, no license or other rights are granted by publication of this repository, by access to this repository, or by any download, clone, fork, or copy of any material contained in it.
 
----
+1. DEFINITIONS
 
-## 1. DEFINITIONS
+“Licensor” means Juan Petter, acting through ARF Foundation.
 
-**“Software”** means the Agentic Reliability Framework (ARF) source code, object code, binary executables, libraries, documentation, specifications, application programming interfaces (APIs), configuration files, and any updates, modifications, or derivative works thereof provided by Licensor, excluding any publicly available materials such as the `arf-spec`, `arf-frontend`, and `pitch-deck` repositories which are shared under separate written terms.
+“Materials” means all content made available in or through this repository, including source code, object code, binaries, documentation, specifications, diagrams, examples, configuration files, interfaces, text, images, media, metadata, and any updates, modifications, or derivative works thereof.
 
-**“Licensor”** means Juan Petter (ARF Foundation), the owner of all intellectual property rights in the Software.
+“Public Materials” means any Materials that Licensor expressly identifies in writing as publicly available under separate written terms.
 
-**“License Agreement”** means a separate written contract (a “Subscription Agreement”, “Pilot Agreement”, or “Enterprise Agreement”) executed between You and Licensor that grants You the right to access, use, or deploy the Software in a production or evaluation environment. This document does not constitute such an Agreement.
+“You” means any individual or legal entity that accesses, views, copies, downloads, forks, installs, or otherwise uses the Materials.
 
-**“You”** means the individual or legal entity exercising permissions under a valid License Agreement.
+2. LIMITED ACCESS
 
----
+Subject to Your full compliance with this License, Licensor grants You a limited, revocable, non-exclusive, non-transferable, and non-sublicensable license to access and view the Materials solely for lawful informational and evaluation purposes.
 
-## 2. NO GRANT OF LICENSE WITHOUT WRITTEN AGREEMENT
+No other rights are granted.
 
-The Software is **not open source** and is **not licensed under the Apache License, Version 2.0, or any other open source license**.
+3. NO OPEN-SOURCE LICENSE
 
-No rights to use, copy, modify, distribute, or access the Software are granted by this document or by the mere possession of the Software. You may only use the Software if You have a valid, signed License Agreement with Licensor.
+This repository is not open source unless Licensor expressly states otherwise in a signed writing.
 
-All use of the Software is governed by the terms of that separate License Agreement, which may include:
-- Limitations on number of evaluations, deployments, or users;
-- Outcome‑based pricing (payment measured by verified risk reduction);
-- Data processing and confidentiality obligations;
-- Support and maintenance terms;
-- Audit rights.
+No portion of the Materials is licensed under the Apache License, Version 2.0, the MIT License, the GNU General Public License, or any other open-source or permissive license unless Licensor expressly states otherwise in a signed writing.
 
----
+4. RESTRICTIONS
 
-## 3. PROHIBITED ACTIONS (WITHOUT A LICENSE AGREEMENT)
+Except to the extent expressly authorized in a signed written agreement from Licensor, You shall not:
 
-In the absence of a valid License Agreement, You may not:
+a. copy, reproduce, publish, distribute, transmit, sell, resell, sublicense, lease, or otherwise make the Materials available to any third party;
 
-- Copy, reproduce, or distribute the Software or any portion thereof;
-- Modify, adapt, translate, reverse engineer, decompile, disassemble, or otherwise attempt to derive the source code of any part of the Software;
-- Remove, alter, or obscure any copyright, trademark, or proprietary notices;
-- Use the Software for any commercial or production purpose;
-- Sub‑license, rent, lease, or lend the Software to any third party;
-- Use the Software to develop any competing product or service.
+b. modify, adapt, translate, port, merge, create derivative works of, or otherwise alter the Materials;
 
----
+c. reverse engineer, decompile, disassemble, or otherwise attempt to derive source code, models, architecture, internal logic, or implementation details from the Materials;
 
-## 4. TRADE SECRET AND CONFIDENTIALITY
+d. scrape, crawl, index, harvest, mirror, or bulk download the Materials or any portion of them;
 
-The Software contains valuable trade secrets and proprietary information of the Licensor. You agree to maintain the Software in strict confidence and to take all reasonable precautions to prevent unauthorised access, disclosure, or use.
+e. use the Materials to train, fine-tune, distill, benchmark, evaluate, align, or improve any artificial intelligence system, machine learning model, large language model, embedding system, retrieval system, or automated content-generation system;
 
-This obligation survives any termination of this License.
+f. remove, alter, obscure, or bypass any proprietary notice, access control, watermark, rate limit, logging control, or security measure;
 
----
+g. use the Materials to build, improve, or support any competing product or service; or
 
-## 5. OWNERSHIP
+h. use the Materials in any unlawful manner or in any manner that violates applicable law, court order, or third-party rights.
 
-All right, title, and interest in and to the Software (including all intellectual property rights therein) remain the exclusive property of Licensor. This License does not transfer any ownership rights.
+5. NO TRADEMARK OR PATENT RIGHTS
 
----
+No trademark rights, patent rights, publicity rights, or other rights are granted by this License. All rights not expressly granted are reserved by Licensor.
 
-## 6. DISCLAIMER OF WARRANTIES
+6. CONFIDENTIALITY
 
-TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE SOFTWARE IS PROVIDED “AS IS” AND “WITH ALL FAULTS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON‑INFRINGEMENT. LICENSOR DOES NOT WARRANT THAT THE SOFTWARE WILL MEET YOUR REQUIREMENTS OR THAT ITS OPERATION WILL BE UNINTERRUPTED OR ERROR‑FREE.
+To the extent any non-public Materials are disclosed to You, those Materials are confidential and proprietary information of Licensor. You shall use reasonable safeguards to protect them and shall not disclose them except as expressly permitted in a signed written agreement.
 
----
+7. PUBLIC MATERIALS
 
-## 7. LIMITATION OF LIABILITY
+If Licensor designates any portion of the repository as Public Materials, those materials remain subject to the terms stated by Licensor for those materials, including any separate written terms.
 
-IN NO EVENT SHALL LICENSOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF OR INABILITY TO USE THE SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+If there is any conflict between this License and a separate signed written agreement governing Public Materials, the signed written agreement controls.
 
----
+8. FEEDBACK
 
-## 8. PUBLIC REPOSITORIES (SPECIFICATION, DEMO UI, PITCH DECK)
+If You provide suggestions, comments, ideas, bug reports, or other feedback, You grant Licensor a perpetual, irrevocable, worldwide, royalty-free, fully paid-up, transferable, sublicensable license to use that feedback for any purpose without restriction and without compensation or obligation to You.
 
-The following repositories are **shared under written terms** and are not open source:
-- `arf-spec` – Canonical specification
-- `arf-frontend` – Demo dashboard (mock data only)
-- `pitch-deck` – Public overview
+9. TERMINATION
 
-These materials may be viewed for reference but may not be used for any commercial or production purpose without explicit written consent from Licensor. They are provided “AS IS” without warranty.
+This License is effective until terminated.
 
----
+Licensor may terminate this License immediately if You violate any term of this License. Upon termination, You must immediately cease all use of the Materials and delete or destroy any copies in Your possession or control, except to the extent retention is required by law.
 
-## 9. GOVERNING LAW
+10. DISCLAIMER OF WARRANTIES
 
-This License shall be governed by and construed in accordance with the laws of the State of Delaware, United States, without regard to its conflict of laws principles. Any legal action or proceeding arising under this License shall be brought exclusively in the state or federal courts located in Delaware.
+THE MATERIALS ARE PROVIDED “AS IS” AND “AS AVAILABLE,” WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT, ACCURACY, OR ERROR-FREE OPERATION.
 
----
+11. LIMITATION OF LIABILITY
 
-## 10. CONTACT INFORMATION
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, LICENSOR SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR FOR ANY LOSS OF PROFITS, REVENUE, DATA, GOODWILL, OR BUSINESS INTERRUPTION, ARISING OUT OF OR RELATED TO THE MATERIALS OR THIS LICENSE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 
-For licensing inquiries, pilot access, or enterprise agreements, contact:
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, LICENSOR’S TOTAL LIABILITY ARISING OUT OF OR RELATED TO THIS LICENSE SHALL NOT EXCEED ONE HUNDRED U.S. DOLLARS (US$100.00).
 
-**Juan Petter** – juan@arf-ai.com
+12. INJUNCTIVE RELIEF
 
----
+You acknowledge that unauthorized copying, scraping, reverse engineering, disclosure, or AI training use of the Materials may cause irreparable harm for which monetary damages may be inadequate. Licensor may seek injunctive or equitable relief, in addition to any other available remedies, to the extent permitted by law.
 
-*This document does not constitute a license to use the Software. A separate written agreement is required.*
+13. GOVERNING LAW; VENUE
+
+This License is governed by the laws of the State of Delaware, without regard to its conflict-of-laws rules.
+
+Any dispute arising out of or relating to this License shall be brought exclusively in the state or federal courts located in Delaware, and You consent to personal jurisdiction and venue in those courts.
+
+14. SEVERABILITY
+
+If any provision of this License is held unenforceable, that provision will be enforced to the maximum extent permitted by law and the remainder will remain in full force and effect.
+
+15. ENTIRE AGREEMENT
+
+This License constitutes the entire agreement between You and Licensor regarding the Materials, except for any separate signed written agreement that expressly governs specific Materials or uses.
+
+16. CONTACT
+
+Licensor: Juan Petter (ARF Foundation)
+Email: juan@arf-ai.com
+Website: arf.foundation
