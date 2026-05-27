@@ -77,11 +77,6 @@ All pricing is **outcome‑based** – you pay only for verified risk reductio
 *   Policy gates cannot be bypassed.
     
 
-📂 Public Repositories (Reference Only)
----------------------------------------
-
-RepositoryContentTerms[arf-spec](https://github.com/arf-foundation/arf-spec)API contracts, data modelsShared under written terms[arf-frontend](https://github.com/arf-foundation/arf-frontend)Demo dashboard (mock)Shared under written terms[pitch-deck](https://github.com/arf-foundation/pitch-deck)Public overviewShared under written terms
-
 > 🔒 **All other repositories are private and access‑controlled.**
 
 🤖 Web Crawlers & AI Training
