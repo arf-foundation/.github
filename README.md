@@ -1,5 +1,10 @@
 # Agentic Reliability Framework (ARF) – Stewarded Governance for AI Systems
 
+> **🔒 Intellectual Property Notice**
+> 
+> The ARF core engine, all private repositories, and any source code not explicitly marked as public are **proprietary and access‑controlled**. No license is granted for use, redistribution, reverse engineering, or analysis outside of a formal pilot or enterprise agreement. The public repositories (`pitch-deck`, `arf-frontend`, `arf-spec`) contain only advisory or mock material and are shared under written terms – not open source. Unauthorized access or use may violate applicable laws.
+
+
 <img src="https://raw.githubusercontent.com/arf-foundation/.github/main/assets/ARF%20-%20Primary%20Logo.png" alt="ARF Logo" width="200"/>
 
 **Auditable cloud governance for AI‑driven infrastructure.**  
