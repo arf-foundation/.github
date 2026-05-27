@@ -57,25 +57,9 @@ ARF is engineered to **counteract these biases** by:
 
 ARF’s risk engine is a **hybrid Bayesian system** with three complementary components:
 
-### 1. Conjugate Online Model (Fast, Real‑time)
-Per‑action‑category Beta priors that update instantly with every observed outcome. Provides immediate risk estimates.
-
-### 2. Hamiltonian Monte Carlo (Deep, Offline)
-A logistic regression with cyclic time encoding (sin/cos of hour) and categorical features (user role, environment). Trained periodically via NUTS, capturing complex patterns that online models miss.
-
-### 3. Hyperprior Shrinkage (Hierarchical)
-When data is sparse, a hierarchical Gamma‑Beta model shares statistical strength across categories, reducing overfitting.
-
-At runtime, the three are **blended dynamically** based on data volume and configurable weights. The final risk score drives an **expected loss minimisation** that considers:
-
-- Cost of false positive/negative
-- Business impact (revenue loss)
-- Predictive risk (forecasts)
-- Epistemic uncertainty
-
-The action with the **lowest expected loss** is chosen – unless a policy violation forces **DENY** or epistemic uncertainty exceeds a threshold, forcing **ESCALATE**.
-
-All random components use a **deterministic seed** derived from the intent ID, guaranteeing reproducibility.
+1. Conjugate Online Model – Fast, real‑time Beta updates per action category.
+2. Hamiltonian Monte Carlo – Offline logistic regression with time‑encoding and categorical features, trained via NUTS.
+3. Hyperprior Shrinkage – Hierarchical model that shares statistical strength across categories.All random components use a **deterministic seed** derived from the intent ID, guaranteeing reproducibility.
 
 ---
 
