@@ -65,10 +65,12 @@ ARF’s risk engine is a **hybrid Bayesian system** with three complementary com
 
 ## 📐 Mathematical Invariants (At a Glance)
 
-- **Risk fusion:** `risk = w₁·θ_conj + w₂·μ_hyper + w₃·p_hmc` with `Σw_i = 1`
-- **Expected loss:** `L_approve = C_FP·risk + C_impact·b + C_predictive·p + C_var·σ²`
-- **Epistemic gate:** `ψ = 1 - ∏(1-u_i)`, escalate if `ψ > threshold`
-- **Determinism:** Identical input + state → identical `HealingIntent` (modulo timestamps)
+📐 Mathematical Invariants (At a Glance)
+
+The system combines multiple Bayesian estimators using adaptive weights that sum to one.
+Expected loss balances false‑positive costs, business impact, predictive risk, and variance penalties.
+An epistemic uncertainty gate forces human review when model confidence is low.
+
 
 These invariants are verified by **44 pressure tests** that run on every commit.
 
