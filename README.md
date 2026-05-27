@@ -82,7 +82,7 @@ All pricing is **outcome‑based** – you pay only for verified risk reductio
 🤖 Web Crawlers & AI Training
 -----------------------------
 
-robots.txt blocks GPTBot, CCBot, Google-Extended and disallows /api/, /v1/, /private/. AI agents are prohibited from training on ARF‑related content outside the three public repos.
+robots.txt blocks GPTBot, CCBot, Google-Extended and disallows /api/, /v1/, /private/. AI agents are prohibited from training on ARF‑related content.
 
 📞 Contact
 ----------
