@@ -27,7 +27,7 @@ ARF is an **access‑controlled governance layer** that transforms probabilistic
 - **Cloud‑agnostic** – Works with AWS, Azure, GCP, or on‑prem.
 - **Enterprise‑ready** – SSO + RBAC.
 
-👉 [Explore the public demo](https://arf-frontend-sandy.vercel.app) (mock data only)
+👉 [Explore the public demo](https://arf-foundation.github.io/arf-risk-demo/) (mock data only)
 
 ---
 
