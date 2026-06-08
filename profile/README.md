@@ -1,7 +1,7 @@
 # ARF AI
 
 > **🔒 PROPRIETARY & CONFIDENTIAL — TRADE SECRETS**  
-> This document provides only high-level information about ARF Foundation. All detailed algorithms, source code, implementation methods, and related materials are trade secrets. Unauthorized copying, redistribution, reverse engineering, or use for AI training is prohibited. See [LICENSE](./LICENSE) for terms.
+> This document contains only high-level information about ARF Foundation. All detailed algorithms, source code, implementation methods, and related materials are trade secrets. Unauthorized copying, redistribution, reverse engineering, or use for AI training is prohibited. See [LICENSE](./LICENSE) for terms.
 
 **Trusted decision infrastructure for AI-driven operations.**  
 ARF helps organizations evaluate AI-generated infrastructure decisions in real time, return clear outcomes, and maintain a complete audit trail.
@@ -12,13 +12,22 @@ Main website: [ARF AI](https://www.arf-ai.com/)
 
 ---
 
-## Executive summary
+> ## Executive summary
+>
+> **What it is:** a governance and decision-control layer for AI-driven operations.  
+> **What it does:** evaluates high-impact AI-assisted infrastructure actions before execution.  
+> **What it returns:** **approve · deny · escalate**  
+> **Why it matters:** it adds deterministic governance, auditability, and human oversight without forcing a full redesign of existing systems.
 
-AI is accelerating operational execution, but it also increases operational, legal, and governance risk. Teams need a way to review high-impact decisions before execution without slowing the business down.
+---
 
-ARF provides a controlled decision layer that evaluates infrastructure-related actions, returns an explicit outcome, and records how each decision was made. The result is simple and operationally useful: **approve, deny, or escalate**.
+## ARF at a glance
 
-This creates stronger oversight, faster review, and a clearer path for enterprise adoption.
+| Govern | Decide | Audit |
+|---|---|---|
+| Enforce policy before execution | Return approve, deny, or escalate | Record every decision and rationale |
+| Support human oversight when needed | Keep outcomes deterministic | Preserve a complete audit trail |
+| Reduce operational ambiguity | Standardize high-impact review | Improve compliance readiness |
 
 ## The problem
 
@@ -47,6 +56,16 @@ For organizations, that means:
 - structured review of high-impact operations,
 - and a permanent record of what happened and why.
 
+## The wedge
+
+ARF’s immediate wedge is:
+
+**AI governance for AI-driven operations.**
+
+More precisely, ARF is a governance and decision-control layer that helps organizations manage high-impact AI-assisted infrastructure actions before they reach production.
+
+That wedge matters because it is concrete, urgent, and budgetable. It speaks directly to buyers who care about trust, operational control, auditability, and safe adoption of AI systems.
+
 ## Why executives care
 
 - Reduces operational risk.
@@ -66,21 +85,24 @@ For organizations, that means:
 - Supports time-limited pilot programs.
 - Can align with outcome-based pricing tied to verified risk reduction.
 
-## The wedge
-
-ARF’s immediate wedge is:
-
-**AI governance for AI-driven operations.**
-
-More precisely, ARF is a governance and decision-control layer that helps organizations manage high-impact AI-assisted infrastructure actions before they reach production.
-
-That wedge matters because it is concrete, urgent, and budgetable. It speaks directly to buyers who care about trust, operational control, auditability, and safe adoption of AI systems.
-
 ## How it works
 
 ARF evaluates each request against business rules, policy constraints, and operational context. It combines live signals with offline analysis to support stable decisions under changing conditions.
 
 When confidence is sufficient, ARF returns a direct outcome. When the situation is unclear or incomplete, it escalates to a human reviewer. Every decision includes a plain-language explanation and the inputs used.
+
+```mermaid
+flowchart LR
+    A[AI Agent / Human Request] --> B[ARF Governance Layer]
+    B --> C{Decision}
+    C --> D[Approve]
+    C --> E[Escalate]
+    C --> F[Deny]
+    D --> G[Execution]
+    E --> H[Human Review]
+    F --> I[Blocked]
+    B --> J[(Audit Trail)]
+```
 
 ## Key properties
 
@@ -111,6 +133,16 @@ ARF is designed for environments where oversight matters.
 - Compatible with enterprise governance and review processes.
 - Suitable for regulated and security-sensitive deployments.
 
+## Access model
+
+| Layer | Availability | Purpose |
+|---|---|---|
+| Public sandbox | Mock responses only | Demonstration and evaluation |
+| Pilot program | Invitation-only, time-limited | Validate the use case with controlled access |
+| Enterprise core | Protected production engine | Commercial deployment and enforcement |
+
+The public sandbox is intentionally limited. Real enforcement, audit guarantees, and production control are reserved for qualified pilots and enterprise customers.
+
 ## Commercial model
 
 ARF is available through a deployment fee and ongoing maintenance support.
@@ -138,14 +170,6 @@ A strong pilot candidate is an organization that:
 
 Pilot engagements are time-limited and access-controlled. The goal is to validate the use case, quantify value, and determine whether the organization should move into a commercial deployment.
 
-## Philosophy
-
-ARF exists to make AI more usable in serious settings without weakening accountability.
-
-The goal is not to remove human judgment. The goal is to support responsible execution, clear ownership, and consistent review.
-
-This system is built for organizations that care about trust, control, and long-term operational discipline.
-
 ## Product principles
 
 ARF is guided by a few non-negotiable principles:
@@ -156,6 +180,14 @@ ARF is guided by a few non-negotiable principles:
 - Auditability should be built into the system, not appended later.
 - Enterprise deployment should not require abandoning existing infrastructure.
 - Commercial terms should reflect actual value delivered.
+
+## Philosophy
+
+ARF exists to make AI more usable in serious settings without weakening accountability.
+
+The goal is not to remove human judgment. The goal is to support responsible execution, clear ownership, and consistent review.
+
+This system is built for organizations that care about trust, control, and long-term operational discipline.
 
 ## Security and access control
 
@@ -171,7 +203,10 @@ ARF uses access control to protect sensitive functionality and preserve the inte
 Sandbox API access is available for approved pilot users with mock data only.
 
 ```bash
-curl -X POST "https://api.arf.foundation/v1/evaluate"   -H "Authorization: Bearer YOUR_TOKEN"   -H "Content-Type: application/json"   -d '{
+curl -X POST "https://api.arf.foundation/v1/evaluate" \
+  -H "Authorization: Bearer YOUR_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
     "request_id": "demo-001",
     "context": "mock",
     "action": "infrastructure_change"
@@ -199,7 +234,7 @@ Allow: /examples/
 For partnerships, pilots, or enterprise licensing:
 
 - Website: [ARF AI](https://www.arf-ai.com/)
-
+- Email: juan@arf-ai.com
 
 ---
 
