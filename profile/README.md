@@ -8,7 +8,7 @@ ARF helps organizations evaluate AI-generated infrastructure decisions in real t
 
 **Access control notice:** the core engine is not public. Access is limited to approved partners, pilot customers, and authorized collaborators.
 
-Main website: [arf.foundation](https://www.arf-ai.com/)
+Main website: [ARF AI](https://www.arf-ai.com/)
 
 ---
 
