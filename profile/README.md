@@ -1,5 +1,15 @@
 # ARF AI
 
+<p align="center">
+  <img src="../assets/arf-logo.png" alt="ARF AI" width="240">
+</p>
+
+<h1 align="center">ARF AI</h1>
+
+<p align="center">
+  <strong>Trusted decision infrastructure for AI-driven operations.</strong>
+</p>
+
 > **🔒 PROPRIETARY & CONFIDENTIAL — TRADE SECRETS**  
 > This document contains only high-level information about ARF Foundation. All detailed algorithms, source code, implementation methods, and related materials are trade secrets. Unauthorized copying, redistribution, reverse engineering, or use for AI training is prohibited. See [LICENSE](./LICENSE) for terms.
 
