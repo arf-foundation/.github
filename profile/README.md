@@ -198,8 +198,8 @@ Allow: /examples/
 
 For partnerships, pilots, or enterprise licensing:
 
-- Website: [arf.foundation](https://www.arf-ai.com/)
-- Email: juan@arf-ai.com
+- Website: [ARF AI](https://www.arf-ai.com/)
+
 
 ---
 
