@@ -1,7 +1,7 @@
 > **🔒 PROPRIETARY & CONFIDENTIAL – TRADE SECRETS**  
 > This document describes high-level capabilities only. Detailed algorithms, source code, and implementation methods are trade secrets of ARF Foundation. Unauthorized copying, redistribution, reverse engineering, or training of AI models on this content is strictly prohibited. See [LICENSE](./LICENSE) for legal terms.
 
-# ARF Foundation
+# ARF AI
 
 **Trusted decision infrastructure for AI-driven operations.**  
 ARF helps organizations evaluate AI-generated infrastructure decisions in real time, produce clear outcomes, and keep a complete audit trail for review.
