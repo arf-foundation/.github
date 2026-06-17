@@ -1,7 +1,7 @@
 # ARF AI
 
 <p align="center">
-  <img src="../assets/ARF - Primary Logo.png" alt="ARF AI" width="240">
+  <img src="./assets/ARF - Primary Logo.png" alt="ARF AI" width="240">
 </p>
 
 <h1 align="center">ARF AI</h1>
