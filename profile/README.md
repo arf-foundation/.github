@@ -50,7 +50,7 @@ That creates a recurring pattern:
 
 The result is not just inefficiency. It is risk without accountability.
 
-## What ARF does
+## What ARF AI does
 
 ARF is a decision-governance layer for AI-driven operations.
 
@@ -65,7 +65,7 @@ For organizations, that means:
 
 ## The wedge
 
-ARF’s immediate wedge is:
+ARF’s AI immediate wedge is:
 
 **AI governance for AI-driven operations.**
 
@@ -94,7 +94,7 @@ That wedge matters because it is concrete, urgent, and budgetable. It speaks dir
 
 ## How it works
 
-ARF evaluates each request against business rules, policy constraints, and operational context. It combines live signals with offline analysis to support stable decisions under changing conditions.
+ARF AI evaluates each request against business rules, policy constraints, and operational context. It combines live signals with offline analysis to support stable decisions under changing conditions.
 
 When confidence is sufficient, ARF returns a direct outcome. When the situation is unclear or incomplete, it escalates to a human reviewer. Every decision includes a plain-language explanation and the inputs used.
 
@@ -131,7 +131,7 @@ flowchart LR
 
 ## Enterprise trust and compliance
 
-ARF is designed for environments where oversight matters.
+ARF AI is designed for environments where oversight matters.
 
 - Audit trail for each decision.
 - Role-based access control.
@@ -152,7 +152,7 @@ The public sandbox is intentionally limited. Real enforcement, audit guarantees,
 
 ## Commercial model
 
-ARF is available through a deployment fee and ongoing maintenance support.
+ARF AI is available through a deployment fee and ongoing maintenance support.
 
 Pricing is adjusted based on usage and verified risk reduction. For enterprise deployments, contact us for a quote.
 
@@ -162,11 +162,11 @@ Typical commercial structure:
 - Maintenance fee: starting at $5,000 per month
 - Pilot program: time-limited free access may be available for qualified partners
 
-ARF is also compatible with outcome-based pricing where appropriate, especially when the commercial value can be tied to verified risk reduction, operational savings, or governance efficiency.
+ARF AI is also compatible with outcome-based pricing where appropriate, especially when the commercial value can be tied to verified risk reduction, operational savings, or governance efficiency.
 
 ## Pilot model
 
-ARF is built to support design partners and pilot customers.
+ARF AI is built to support design partners and pilot customers.
 
 A strong pilot candidate is an organization that:
 
@@ -179,7 +179,7 @@ Pilot engagements are time-limited and access-controlled. The goal is to validat
 
 ## Product principles
 
-ARF is guided by a few non-negotiable principles:
+ARF AI is guided by a few non-negotiable principles:
 
 - Governance should be deterministic where possible.
 - High-impact decisions should be explainable.
@@ -190,7 +190,7 @@ ARF is guided by a few non-negotiable principles:
 
 ## Philosophy
 
-ARF exists to make AI more usable in serious settings without weakening accountability.
+ARF AI exists to make AI more usable in serious settings without weakening accountability.
 
 The goal is not to remove human judgment. The goal is to support responsible execution, clear ownership, and consistent review.
 
@@ -198,7 +198,7 @@ This system is built for organizations that care about trust, control, and long-
 
 ## Security and access control
 
-ARF uses access control to protect sensitive functionality and preserve the integrity of the core engine.
+ARF AI uses access control to protect sensitive functionality and preserve the integrity of the core engine.
 
 - The core engine is not public.
 - Approved collaborators receive only the access required for their role.
@@ -247,6 +247,6 @@ For partnerships, pilots, or enterprise licensing:
 
 ## Short version
 
-ARF is the decision layer between AI intent and production execution.
+ARF AI is the decision layer between AI intent and production execution.
 
 It evaluates AI-assisted operational requests, applies policy and context, returns approve/deny/escalate outcomes, and records a complete audit trail. It is built for organizations that want to move faster with AI without giving up control, compliance, or accountability.
