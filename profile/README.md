@@ -11,7 +11,7 @@
 > **🔒 PROPRIETARY & CONFIDENTIAL — TRADE SECRETS**  
 > This document contains only high-level information about ARF Foundation. All detailed algorithms, source code, implementation methods, and related materials are trade secrets. Unauthorized copying, redistribution, reverse engineering, or use for AI training is prohibited. See [LICENSE](./LICENSE) for terms.
 
-ARF helps organizations evaluate AI-generated infrastructure decisions in real time, return clear outcomes, and maintain a complete audit trail.
+ARF AI helps organizations evaluate AI-generated infrastructure decisions in real time, return clear outcomes, and maintain a complete audit trail.
 
 **Access control notice:** the core engine is not public. Access is limited to approved partners, pilot customers, and authorized collaborators.
 
