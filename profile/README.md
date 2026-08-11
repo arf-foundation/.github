@@ -158,8 +158,8 @@ Pricing is adjusted based on usage and verified risk reduction. For enterprise d
 
 Typical commercial structure:
 
-- Deployment fee: starting at $50,000
-- Maintenance fee: starting at $5,000 per month
+- Deployment fee: fixed, scoped during the pilot review
+- Maintenance fee: recurring, tied to usage and support tier
 - Pilot program: time-limited free access may be available for qualified partners
 
 ARF AI is also compatible with outcome-based pricing where appropriate, especially when the commercial value can be tied to verified risk reduction, operational savings, or governance efficiency.
@@ -210,8 +210,7 @@ ARF AI uses access control to protect sensitive functionality and preserve the i
 Sandbox API access is available for approved pilot users with mock data only.
 
 ```bash
-curl -X POST "https://api.arf.foundation/v1/evaluate" \
-  -H "Authorization: Bearer YOUR_TOKEN" \
+curl -X POST "https://arf-ai-arf-sandbox-api.hf.space/v1/evaluate" \
   -H "Content-Type: application/json" \
   -d '{
     "request_id": "demo-001",
