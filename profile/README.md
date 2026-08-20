@@ -30,11 +30,21 @@ Main website: [ARF AI](https://www.arf-ai.com/)
 
 ## ARF at a glance
 
-| Govern | Decide | Audit |
-|---|---|---|
-| Enforce policy before execution | Return approve, deny, or escalate | Record every decision and rationale |
-| Support human oversight when needed | Keep outcomes deterministic | Preserve a complete audit trail |
-| Reduce operational ambiguity | Standardize high-impact review | Improve compliance readiness |
+| Govern                              | Decide                            | Audit                               |
+| ----------------------------------- | --------------------------------- | ----------------------------------- |
+| Enforce policy before execution     | Return approve, deny, or escalate | Record every decision and rationale |
+| Support human oversight when needed | Keep outcomes deterministic       | Preserve a complete audit trail     |
+| Reduce operational ambiguity        | Standardize high-impact review    | Improve compliance readiness        |
+
+## Who ARF is for
+
+Built for the moment AI agents stop recommending and start acting on production infrastructure.
+
+- **Platform & SRE leads** — you decide what AI-assisted tooling is allowed to do in production, and you need that decision enforced, not just documented.
+- **Security & compliance leaders** — you need a defensible, tamper-evident record of every AI-assisted operational decision, before an auditor asks, not after.
+- **Teams adopting AI-driven operations** — you want the speed of autonomous AI without losing the ability to explain, in writing, what happened and why.
+
+Not there yet? The public sandbox is exactly for that — ARF is built for the step after evaluation, not instead of it.
 
 ## The problem
 
@@ -122,11 +132,11 @@ flowchart LR
 
 ## Primary use cases
 
-| Use case | What ARF provides |
-|---|---|
-| Infrastructure change review | Evaluates proposed changes before execution |
-| AI-assisted operations | Reviews AI-generated operational decisions |
-| Compliance oversight | Provides traceability and reviewability |
+| Use case                     | What ARF provides                                    |
+| ---------------------------- | ---------------------------------------------------- |
+| Infrastructure change review | Evaluates proposed changes before execution          |
+| AI-assisted operations       | Reviews AI-generated operational decisions           |
+| Compliance oversight         | Provides traceability and reviewability              |
 | Enterprise pilot deployments | Supports time-limited testing with controlled access |
 
 ## Enterprise trust and compliance
@@ -142,11 +152,11 @@ ARF AI is designed for environments where oversight matters.
 
 ## Access model
 
-| Layer | Availability | Purpose |
-|---|---|---|
-| Public sandbox | Mock responses only | Demonstration and evaluation |
-| Pilot program | Invitation-only, time-limited | Validate the use case with controlled access |
-| Enterprise core | Protected production engine | Commercial deployment and enforcement |
+| Layer           | Availability                  | Purpose                                      |
+| --------------- | ----------------------------- | -------------------------------------------- |
+| Public sandbox  | Mock responses only           | Demonstration and evaluation                 |
+| Pilot program   | Invitation-only, time-limited | Validate the use case with controlled access |
+| Enterprise core | Protected production engine   | Commercial deployment and enforcement        |
 
 The public sandbox is intentionally limited. Real enforcement, audit guarantees, and production control are reserved for qualified pilots and enterprise customers.
 
