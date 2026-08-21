@@ -46,6 +46,27 @@ Built for the moment AI agents stop recommending and start acting on production 
 
 Not there yet? The public sandbox is exactly for that — ARF is built for the step after evaluation, not instead of it.
 
+## For developers
+
+This page reads like a company profile because most of it is one — the core
+engine is access-controlled, not open source (see [Access model](#access-model)
+below). What's actually here for you:
+
+- **[arf-frontend](https://github.com/arf-foundation/arf-frontend)** — the
+  public frontend source, MIT-adjacent parts included.
+- **[Public sandbox](#live-demos)** — a real API, mock responses, no
+  credential required. The `curl` example below is copy-pasteable.
+- **[Risk demo](https://arf-foundation.github.io/arf-risk-demo/)** — a
+  mobile-friendly, simulated risk-scoring demo, not connected to the
+  protected core engine.
+- **[Pitch deck](https://arf-foundation.github.io/pitch-deck/)** — the
+  problem/solution/technical-foundations walkthrough, if the business
+  framing above is what you actually came for.
+
+Want the protected core engine itself (API contracts, decision logic,
+source)? That's the [pilot program](#pilot-model) — see below for what
+qualifies.
+
 ## The problem
 
 Modern teams are pushing AI into production faster than their governance processes can keep up.
