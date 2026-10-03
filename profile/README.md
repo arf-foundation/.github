@@ -64,14 +64,14 @@ curl -X POST https://arf-ai-arf-sandbox-api.hf.space/v1/evaluate \
 | Repository | What it is | License |
 |---|---|---|
 | [arf-frontend](https://github.com/arf-foundation/arf-frontend) | Source of arf-ai.com: the site, the sandbox UI and the simulated console | Apache 2.0 |
-| [pitch-deck](https://github.com/arf-foundation/pitch-deck) | Investor overview | Viewing only, under written terms |
+| [pitch-deck](https://github.com/arf-foundation/pitch-deck) | Investor overview | Deck content: free to view and link to; copying or adapting it needs written permission. The page's own code: Apache 2.0. |
 | [arf-pattern-examples](https://github.com/petter2025us/arf-pattern-examples) | Independent reference code for the propose → decide → record pattern. It contains none of ARF's engine. | Apache 2.0 |
 
 > [!IMPORTANT]
 > **The engine is private.** ARF's engine, enterprise layer, API and specifications are proprietary and access-controlled. Nothing on this page describes how they work internally.
 
 > [!WARNING]
-> **Unofficial copies of an early prototype.** Public repositories named `agentic-reliability-framework` and `arf-api-repository` belong to a personal account that is no longer maintained. They hold an early prototype published in 2025 and early 2026, which is **not** ARF's current engine:
+> **Unmaintained early prototypes on a former personal account.** Public repositories named `agentic-reliability-framework` and `arf-api-repository` sit on a personal account that is no longer maintained. They hold an early prototype published in 2025 and early 2026, which is **not** ARF's current engine:
 > - it has known defects;
 > - it lacks the admission, approval-ledger and audit-verification layers ARF has added since.
 >
@@ -79,7 +79,10 @@ curl -X POST https://arf-ai-arf-sandbox-api.hf.space/v1/evaluate \
 
 ### Intellectual property
 
-This page carries high-level information only. ARF's algorithms, source code and implementation methods are trade secrets of Juan Petter (ARF Foundation), and no license is granted by publishing this page ([LICENSE](https://github.com/arf-foundation/.github/blob/main/LICENSE)). Copying, redistribution, reverse engineering and use of ARF materials for AI training are not permitted.
+This page carries high-level information only. The private engine's algorithms, source code and implementation methods remain trade secrets of Juan Petter (ARF Foundation). This profile grants no rights beyond those in the applicable LICENSE files:
+
+- **This repository's [LICENSE](https://github.com/arf-foundation/.github/blob/main/LICENSE)** allows viewing its materials for informational and evaluation purposes. It prohibits reverse engineering them and using them for AI training.
+- **Each public repository above** states its own license.
 
 ### Contact
 
