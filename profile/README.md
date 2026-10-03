@@ -72,10 +72,10 @@ curl -X POST https://arf-ai-arf-sandbox-api.hf.space/v1/evaluate \
 
 > [!WARNING]
 > **Unmaintained early prototypes on a former personal account.** Public repositories named `agentic-reliability-framework` and `arf-api-repository` sit on a personal account that is no longer maintained. They hold an early prototype published in 2025 and early 2026, which is **not** ARF's current engine:
-> - it has known defects;
+> - it has received none of the fixes made since March 2026;
 > - it lacks the admission, approval-ledger and audit-verification layers ARF has added since.
 >
-> Please don't run it. Its old releases on PyPI are yanked.
+> Please don't run it. Its old releases on PyPI have been removed.
 
 ### Intellectual property
 
