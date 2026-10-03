@@ -1,96 +1,18 @@
-<!--
-  ARF Foundation – GitHub Organization Profile
-  Marketing-focused, IP‑safe. No trade secrets.
-  Last updated: 2026-05-27
--->
+# arf-foundation/.github
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/arf-foundation/.github/main/assets/ARF%20-%20Primary%20Logo.png" alt="ARF Logo" width="260">
-</p>
+This repository holds ARF AI's organization-wide files:
 
-<h1 align="center">Agentic Reliability Framework (ARF)</h1>
-<p align="center"><strong>Auditable cloud governance for AI‑driven infrastructure</strong></p>
+- the public [organization profile](profile/README.md), shown at [github.com/arf-foundation](https://github.com/arf-foundation);
+- brand assets;
+- crawler rules.
 
-<br>
+| | |
+|---|---|
+| **Website** | [arf-ai.com](https://www.arf-ai.com) |
+| **Contact** | [juan@arf-ai.com](mailto:juan@arf-ai.com) |
+| **Pilot requests** | [arf-ai.com/signup](https://www.arf-ai.com/signup) |
 
-> 🔒 **PROPRIETARY & CONFIDENTIAL – TRADE SECRETS**  
-> This document describes high‑level capabilities only. Detailed algorithms, source code, and implementation methods are trade secrets of ARF Foundation. Unauthorized copying, redistribution, reverse engineering, or training of AI models on this content is strictly prohibited. See [LICENSE](./LICENSE) for legal terms.
+> [!IMPORTANT]
+> ARF's engine is private and access-controlled. The [profile](profile/README.md) lists what is public, and warns about unmaintained early prototypes on a former personal account.
 
----
-
-## 🚀 What is ARF?
-
-ARF is an **access‑controlled governance layer** that transforms probabilistic AI into deterministic, auditable, and mechanically enforced outcomes — built for environments where trust is non‑negotiable.
-
-- **Deterministic** – Same inputs → same output. No hidden randomness.
-- **Auditable** – Every decision is signed and stored for compliance.
-- **Cloud‑agnostic** – Works with AWS, Azure, GCP, or on‑prem.
-- **Enterprise‑ready** – SSO + RBAC.
-
-👉 [Explore the public demo](https://arf-foundation.github.io/arf-risk-demo/) (mock data only)
-
----
-
-## 🎯 How It Works (High‑Level)
-
-Every AI‑generated infrastructure decision is evaluated in real time and classified into **three outcomes**:
-
-| Outcome | Meaning |
-|---------|---------|
-| ✅ **Approve** | Safe – proceed automatically. |
-| ⚠️ **Escalate** | Uncertain or high risk – human review. |
-| ❌ **Deny** | Policy violation or unacceptable risk – blocked. |
-
-Each decision comes with:
-- A plain‑English justification
-- A full audit trail
-- A confidence score
-
----
-
-## 🧪 Try the Sandbox (Mock Data)
-
-```bash
-curl -X POST https://a-r-f-arf-sandbox-api.hf.space/v1/evaluate \
-  -H "Content-Type: application/json" \
-  -d '{"service_name":"api","event_type":"latency","severity":"high"}'
-```
-
-> ⚠️ Returns simulated responses only. The real engine is **not publicly accessible**.
-
-📊 Access Models
-----------------
-
-ModelDescription**Sandbox**Advisory, mock data, free.**Pilot**Time‑limited, free, founder‑led onboarding.**Enterprise**Full enforcement, audit trails, SSO, SLA.
-
-All pricing is **outcome‑based** – you pay only for verified risk reduction.
-
-🛡️ Enterprise Trust
---------------------
-
-*   Immutable audit logs – cryptographically signed.
-    
-*   Designed for SOC2, ISO 27001, GDPR.
-    
-*   No raw customer data retained.
-    
-*   Policy gates cannot be bypassed.
-    
-
-> 🔒 **All other repositories are private and access‑controlled.**
-
-🤖 Web Crawlers & AI Training
------------------------------
-
-robots.txt blocks GPTBot, CCBot, Google-Extended and disallows /api/, /v1/, /private/. AI agents are prohibited from training on ARF‑related content.
-
-📞 Contact
-----------
-
-*   **Email:** juan@arf-ai.com
-    
-*   **LinkedIn:** [Juan Petter](https://www.linkedin.com/in/petterjuan/)
-    
-*   **Book a call:** [30‑Min Consultation](https://calendly.com/petter2025us/30min)
-
-* 
+Proprietary. See [LICENSE](LICENSE) and [NOTICE](NOTICE.md).
