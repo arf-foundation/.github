@@ -86,4 +86,4 @@ This page carries high-level information only. The private engine's algorithms, 
 
 ### Contact
 
-[juan@arf-ai.com](mailto:juan@arf-ai.com) · [arf-ai.com](https://www.arf-ai.com) · [Book 30 minutes](https://calendly.com/petter2025us/30min) · New York
+[juan@arf-ai.com](mailto:juan@arf-ai.com) · [arf-ai.com](https://www.arf-ai.com) · [Book 30 minutes](https://calendly.com/petter2025us/30min)
