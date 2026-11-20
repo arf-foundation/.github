@@ -1,10 +1,6 @@
 {
   "pinnedRepositories": [
     {
-      "repositoryName": "arf-risk-demo",
-      "owner": "arf-foundation"
-    },
-    {
       "repositoryName": "arf-frontend",
       "owner": "arf-foundation"
     },
