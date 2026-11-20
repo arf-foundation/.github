@@ -35,28 +35,50 @@ For modeled storage actions, ARF does four things before the action runs:
 - binds each approval to the exact action;
 - records the decision.
 
+```mermaid
+flowchart LR
+  A["Agent proposes write action"] --> B["Check live state and reversibility"]
+  B -->|"Reversible and within policy"| C["Unattended execution"]
+  B -->|"Irreversible or policy-gated"| D["Human approval bound to exact action"]
+  C --> E["Decision record"]
+  D --> E
+```
+
 This is demonstrated today on a simulated cluster.
 
 ### How to work with us
 
-| Step | What you get | Price |
-|---|---|---|
-| **Pilot snapshot** | One agent, five named write tools: which actions could run unattended and which need approval | Free · three founding slots, in exchange for a written reference |
-| **Write-access review** | Every write path in the agreed tool inventory: whether each can be undone, unattended vs. approval-required, and explicit gaps | **$4,500** fixed · one agent |
-| **Continuous gate** | ARF in your agent's write path, where that path is modeled | By invitation, after a review |
+| Step | What you get | Deliverable | Price |
+|---|---|---|---|
+| **Pilot snapshot** | One agent, five named write tools: which actions could run unattended and which need approval | Short written summary | Free · limited founding availability (scope confirmed on a call; public reference optional) |
+| **Write-access review** | Up to 10 named write operations in one environment/provider and up to 200 supplied records: reversibility from evidence, unattended vs. approval-required, and explicit gaps | Inventory and recoverability map, decision memo, scored history where modeled, gap list, readout | **$4,500** fixed · one agent (50% deposit after agreed scope) |
+| **Continuous gate** | ARF in your agent's write path, where that path is modeled (demonstrated today for ONTAP storage operations on a simulated cluster) | Scoped per engagement | By invitation, after a review |
 
 The snapshot and the review both work from read-only material: tool definitions, traces and action history.
 
-**[Request a pilot →](https://www.arf-ai.com/signup)**
+**[Request a pilot →](https://www.arf-ai.com/signup)** · **[Book 30 minutes](https://calendly.com/petter2025us/30min)**
 
 ### Try the sandbox
 
-The public sandbox returns **simulated** decisions. It is a demonstration surface, not the engine.
+The public sandbox returns **simulated** decisions against a simplified mock event schema (not a live storage cluster and not the engine). You can also explore the interactive **[Console (simulated data)](https://www.arf-ai.com/dashboard)** in your browser.
 
 ```bash
 curl -X POST https://arf-ai-arf-sandbox-api.hf.space/v1/evaluate \
   -H "Content-Type: application/json" \
   -d '{"service_name":"api","event_type":"latency","severity":"high","metrics":{"latency_ms":450}}'
+```
+
+Observed simulated response (the Hugging Face Space may take a few seconds on cold start):
+
+```json
+{
+  "status": "success",
+  "recommendation": "ESCALATE",
+  "risk_score": 0.6227,
+  "confidence": 0.8382,
+  "justification": "Simulated evaluation for api: latency severity=high. Risk score 0.62 → ESCALATE. (Mock response, not real inference.)",
+  "policy_violations": []
+}
 ```
 
 ### Public repositories
@@ -75,13 +97,13 @@ curl -X POST https://arf-ai-arf-sandbox-api.hf.space/v1/evaluate \
 > - it has received none of the fixes made since March 2026;
 > - it lacks the admission, approval-ledger and audit-verification layers ARF has added since.
 >
-> Please don't run it. Its old releases on PyPI have been removed.
+> Please don't run it. Its old releases on PyPI have been removed. For maintained public reference code, see [arf-pattern-examples](https://github.com/petter2025us/arf-pattern-examples).
 
 ### Intellectual property
 
 This page carries high-level information only. The private engine's algorithms, source code and implementation methods remain trade secrets of Juan Petter (ARF Foundation). This profile grants no rights beyond those in the applicable LICENSE files:
 
-- **This repository's [LICENSE](https://github.com/arf-foundation/.github/blob/main/LICENSE)** allows viewing its materials for informational and evaluation purposes. It prohibits reverse engineering them and using them for AI training.
+- **This repository's [LICENSE](https://github.com/arf-foundation/.github/blob/main/LICENSE)** permits viewing these profile materials for informational and evaluation purposes only, and restricts copying, redistribution, reverse engineering, and AI training.
 - **Each public repository above** states its own license.
 
 ### Contact
